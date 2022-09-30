@@ -1,0 +1,141 @@
+@charset "utf-8";
+/*가로사이즈 상관없이 모든 화면사이즈에서 사용할 스타일
+중단점 상관 없이 모든 곳에서 동일하게 사용하는 CSS 의 경우
+media 안쪽에 쓰는것이 아니라 바깥쪽에 쓰임.
+
+ - 중단점 : 레이아웃이 바뀌는 지점.
+*/
+*{margin:0; padding:0;}
+li{list-style:none;}
+img{border:0; vertical-align:top;}
+a{text-decoration:none;}
+a:link, a:visited, a:hover, a:active{color:#333;}
+
+#logo{width:160px; height:60px;}
+#logo>a{
+	display:block;
+	width:100%; height:100%;
+	background:url('../images/logo.jpg') no-repeat;
+	text-indent:-9999999px;
+	overflow:hidden;
+}
+#menu{position:absolute; right:0; top:0; width:60px; height:60px;}
+#menu>a{
+	display:block;
+	width:100%; height:100%;
+	background:url('../images/menu.jpg') no-repeat;
+	text-indent:-9999999px;
+	overflow:hidden;
+}
+header.wrap{
+	height:60px;
+}
+
+
+section>h2{
+    display:none;
+    visibility:hidden;
+    width:0; height:0;
+    overflow:hidden;
+    text-indent:-9999px;
+}
+
+#product ul li, 
+#accessories ul li{float:left; position:relative;}
+
+#product ul li p, 
+#accessories ul li p{position:absolute;}
+
+#product ul li p{
+    color:#fff;
+    left:20px; top:10px;
+    font-weight:bold;
+}
+#accessories ul li p{
+    font-weight:bold;
+    bottom:5%; text-align:center;
+    width:100%;
+}
+#product ul::after,
+#accessories ul::after{
+    content:'';
+    display:block;
+    width:0; height:0;
+    visibility:hidden;
+    overflow:hidden;
+    clear:both;
+}
+#product ul li img , #accessories ul li img {width:100%;}
+#accessories>p{
+    font-size:1.2em; padding:2%;
+    font-weight:bold;
+	text-transform:uppercase
+}
+
+@media all and (min-width:801px){ 
+    /*가로사이즈가 801px 이상 :: PC모드*/
+    
+    /*PCver 헤더영역*/
+    .wrap{
+       width:75%; margin:0 auto;
+		position:relative;
+    }
+
+    /*PCver 비주얼 배너 영역*/
+    #main>p:nth-of-type(1){
+        position:absolute;
+        right:100px;
+        top:50px;
+        font-size:28px;
+        font-weight:bold;
+    }
+    #main>p:nth-of-type(2){
+        position:absolute;
+        right:100px;
+        top:150px;
+        font-size:23px;
+        font-weight:bold;
+    }
+    #main>img{width:400px; margin-left:100px;}
+
+    /*PCver 제품,액세서리 영역*/
+    #product ul li{width:50%;}
+    #accessories ul li{width:25%;}
+    #product{margin-top:50px;}
+
+    footer{padding:70px 0px 50px;}
+    footer address{
+        font-style:normal;
+        color:#666;
+        position:absolute;
+        left:100px; top:70px;
+    }
+}
+@media all and (max-width:800px){
+    /*가로사이즈가 800px 이하 :: MOBILE모드*/
+
+    /*Mver 비주얼 영역*/
+    #main{text-align:center;}
+    #main>p:nth-of-type(1){
+        font-size:36px;
+        font-weight:bold;
+        margin:20px 0;
+    }
+    #main>img{width:70%;}
+    #main>p:nth-of-type(2){
+        font-weight:bold;
+        margin:20px 0;
+        font-size:20px;
+    }
+
+    /*Mver 제품영역,액세서리 영역*/
+    #product ul li{width:100%;}
+    #accessories ul li{width:50%;}
+    #product{margin:70px 0;}
+
+    footer{padding:5%;}
+    footer address{
+        font-style:normal;
+        color:#666;
+    }
+}

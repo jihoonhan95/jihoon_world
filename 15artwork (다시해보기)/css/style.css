@@ -1,0 +1,122 @@
+@charset "utf-8";
+*{margin:0; padding:0; list-style:none;}
+a,a:link,a:visited,a:hover,a:active{text-decoration:none; color:#333;}
+
+/*헤더*/
+header{background:#ddd;}
+.wrap{
+    width:1440px;
+    margin:0 auto;
+    display:flex;
+    flex-flow:row wrap;
+}
+h1,h2{
+	display:none;
+	visibility:hidden;
+	width:0; height:0;
+	overflow:hidden;
+	text-indent:-999px;
+}
+#logo{margin-right:80px;}
+#logo img{display:block; width:70%;}
+nav{width:50%;}
+.menu{display:flex;}
+.menu>li{width:100%; text-align:center;}
+.menu>li>a{
+    display:block;
+    font-size:25px;
+    line-height: 140px;
+}
+.sub_menu{display:none;}
+
+
+/* 슬라이드 영역 */
+#sec_slide{margin-top:5px;}
+.slide_box{
+    width:1200px;
+    height:350px;
+    overflow: hidden;
+}
+
+
+/*컨텐츠 영역*/
+#sec_con{height:200px;}
+/* 팝업 */
+.popup{
+    background:red;
+    width:200px; height:150px;
+    display:none;
+    position:absolute;
+}
+
+/* 공지사항 */
+.con01, .con02, .con03{width:28%; height:100%;}
+.con01 span{
+    border-top:1px solid #333;
+    border-right:1px solid #333;
+    border-left:1px solid #333;
+    padding:10px;
+    box-sizing: border-box;
+    display:block;
+    width:30%;
+    text-align: center;
+}
+.con01>table, .gallery{height:154px;}
+.con01>table{
+    width:100%;
+    border-top:1px solid #333;
+    border-bottom:1px solid #333;
+    border-left:1px solid #333;
+}
+
+.con01>table td:first-child{padding-left:10px;}
+.con01>table td:last-child{text-align: right; padding-right:20px;}
+.con01>table td{font-weight:700;}
+.con01>table>tr{background:#000;}
+/* 갤러리 */
+.con02 span{
+    padding:10px;
+    box-sizing: border-box;
+    display:block;
+    width:30%;
+    background:goldenrod;
+    color: #fff;
+    text-align: center;
+}
+.con02 img{
+    display:block;
+    width:95%;
+    margin:30px 0 0 4px;
+}
+.gallery{
+    display:flex;
+    border-top:1px solid goldenrod;
+    border-bottom:1px solid goldenrod;
+    border-left:1px solid goldenrod;
+}
+.con03 img{display: block; width:100%;}
+
+
+
+
+
+/* 푸터 영역 */
+footer{background:#ddd;}
+footer>div{
+    width:1440px;
+    margin: 0 auto;
+    position:relative;}
+.footer_logo>img{
+    display:block; width:50%;
+}
+.footer_center{
+    position:absolute;
+    top:40%;
+    left:40%;
+}
+.footer_right{
+    position: absolute;
+    right:15%;
+    top:25%;
+}
+

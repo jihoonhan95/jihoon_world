@@ -1,0 +1,21 @@
+세계의 미술작품 
+	-index.html
+	-style.css
+	-script.js  완성!
+문제지01 준하여 작성하세요~!
+
+※ script에 사용할 메소드/함수
+ - 팝업 jquery : show(), hide()	, click()
+ 
+ - GNB슬라이드 
+	hover() / .mouseover() & mouseleave()
+	
+ - 슬라이드 배너 
+	setInterval 사용 (자동 슬라이드)
+	
+	setInterval(function(){ 
+		슬라이드 움직이는거 실행문 작성하시고..
+		 .animate() 사용하여 적용함.
+	},3000);
+	
+
