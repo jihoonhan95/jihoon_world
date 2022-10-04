@@ -70,6 +70,9 @@ footer{
 }
 
 footer>div:last-child{position:relative;}
+footer .font>a{
+    font-weight:900;
+}
 address{margin-top:30px;}
 address>ul{margin-bottom:20px;}
 address li{margin-right:20px;}
