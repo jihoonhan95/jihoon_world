@@ -1,0 +1,34 @@
+@charset "utf-8";
+@import url('./reset.css');
+
+.wrap{max-width:1920px; margin:0 auto;}
+img{vertical-align:top;}
+.clear::after{
+    content:'';
+    width:0; height:0;
+    display:block;
+    clear:both;
+    visibility:hidden;
+}
+
+
+.flex{
+    display:flex;
+    flex-flow:row wrap;
+}
+
+nav{justify-content:space-between; align-items:center;}
+nav>h1{width:30%;}
+nav img{width:13%;}
+nav li{margin-left:20px;}
+nav li>a{font-size:1.2vw;}
+
+#visual>img{width:100%;}
+
+
+.section1>ul>li img{width:100%;}
+.section1>ul>li{
+    width:25%;
+    box-sizing:border-box;
+    text-align:center;
+}

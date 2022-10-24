@@ -1,0 +1,195 @@
+@charset  "utf-8";
+
+@media all and (min-width:621px) {/*PC ver*/
+	.wrap{width:960px;}
+	
+	/* 비주얼 영역 */
+	#visual>.wrap>figure{
+		cursor:pointer;
+		overflow:hidden;
+	}
+	#visual>.wrap>figure:nth-child(1){
+		width:614px;
+	}
+	#visual>.wrap>figure:nth-child(2){
+		position:absolute;
+		right:0; top:0;
+		display:block !important;
+	}
+	#visual>.wrap>figure:nth-child(3){
+		position:absolute;
+		right:0; bottom:0;
+		display:block !important;
+	}
+	#visual>.wrap>figure:nth-child(2)>figcaption{
+		background:rgba(0,0,0,0.5);
+		box-sizing:border-box;
+		color:#fff;
+		width:100%;
+		font-size:1.5rem;
+		transition:all .4s;
+		padding:20px 0;
+		position:absolute;
+		top:-100%;
+		transform:translateY(50%;)
+	}
+	#visual>.wrap>figure:nth-child(2):hover>figcaption{top:50%;}
+	#visual>.wrap>figure:nth-child(3)>figcaption{
+		background:rgba(255,255,255,0.5);
+		box-sizing:border-box;
+		color:#000;
+		right:-100%;
+		width:100%;
+		font-size:1.5rem;
+		transition:all .4s;
+		padding:20px 0;
+		position:absolute;
+		top:50%;
+		transform:translateY(-50%);
+		text-align:center;
+		font-weight:800;
+		
+
+	}/* ↑ 수정하여 hover 효과 바꿔보기*/
+	#visual>.wrap>figure:nth-child(3):hover>figcaption{right:0;}
+	
+	/* 띠배너 영역 */
+	#line_bnr>.wrap>figure>figcaption{
+		display:block !important;
+	}
+
+	/* 갤러리 영역 */
+	#gallery{
+		border-bottom:1px solid #ddd;
+		margin:0 0 40px 0;
+		background:#f3f3f3;
+	}
+	#gallery .title>span{background:#f3f3f3;}
+	.gallery_list>li{
+		float:left;
+		margin:0 45px 20px 0;
+		overflow:hidden;
+	}
+	.gallery_list>li:nth-child(3n){
+		margin-right:0;
+		overflow:hidden;
+	}
+	.gallery_list>li h4{
+		margin:15px 0 0 0;
+		width:290px;
+		text-overflow:ellipsis;
+		white-space:nowrap;
+		overflow:hidden;
+		font-weight:bold;
+	}
+	
+	.gallery_list>li:hover img{
+		filter:grayscale(60%);
+		transform:rotateX(360deg);
+		transition: all .4s;
+	}
+
+	/* 최근 작품 영역 */
+	#latest>.wrap>article:first-child{
+		width:650px;
+		float:left;
+	}
+	#latest>.wrap>article:last-child{
+		display:block !important;
+		width:290px;
+		float:right
+	}
+	#latest>.wrap::after{
+	content:'';
+	width:0; height:0;
+	display:block;
+	clear:both;
+	visibility:hidden;
+	}
+	#latest>.wrap>article:first-child>a{
+		display:block;
+		position:relative;
+		width:100%;
+		height:110px;
+	}
+	#latest>.wrap>article:first-child>a dl{
+		position:absolute;
+		left:160px;
+		top:0;
+	}
+	#latest figure{
+		position:relative;
+		overflow:hidden;
+	}
+	#latest figure>figcaption{
+		width:100%;
+		height:100%;
+		background:rgba(0,0,0,0.5);
+		position:absolute;
+		top:100%; left:100%;
+		color:#fff;
+		font-size:1rem;
+		font-weight:bold;
+		text-align:center;
+		transform:translate(-50% -50%);
+		transition:all .4s;
+		box-sizing:border-box;
+		padding:25%;
+		
+	}
+	#latest figure:hover>figcaption{
+		width:100%;
+		height:100%;
+		top:0; left:0;
+		font-size:1.5rem;
+	}
+	#latest>.wrap>article>a>dl>dt{
+		font-weight:800;
+		margin-bottom:30px;
+	}
+	#latest>.wrap>article>a>dl>dd{
+		margin-bottom:5px;
+	}
+	
+	
+
+	/* 큰배너 영역 */
+	#bnr_wrap{
+		height:327px;
+		text-align:center;
+		margin:40px 0 0 0;
+		background:#f3f3f3;
+	}
+	#bnr_wrap>a{
+		display:block;
+		margin:0 auto;
+		width:940px;
+		height:327px;
+		background:url('../images/bnr.jpg') no-repeat;
+		overflow:hidden;
+		text-indent:-99999px;
+	}
+	
+	/* 푸터 영역 */
+	footer{
+		height:200px;
+		padding:40px 0 0 0;
+	}
+
+	/* top 버튼 */
+	aside.top_btn{
+		position:fixed;
+		right:40px;
+		bottom:40px;
+		width:60px;
+		height:60px;
+		background:teal;
+		color:#fff;
+		line-height:60px;
+		text-align:center;
+		border-radius:50%;
+		cursor:pointer;
+		font-size:2.5rem;
+	}
+
+}

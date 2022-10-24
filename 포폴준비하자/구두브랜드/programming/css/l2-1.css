@@ -1,0 +1,126 @@
+@charset  "utf-8";
+@import url('./reset.css');
+@import url('./common.css');
+
+/*
+font-family: 'Pretendard-Regular';
+font-family: 'SEBANG_Gothic_Bold';
+*/
+*{box-sizing: border-box;}
+#gnb>li:last-child {padding-top: 10px;}
+
+/* input style */
+input{
+    width:100%;
+    height:50px;
+    border:none;
+    background:#eee;
+    margin-bottom:20px;
+    padding:10px;
+}
+/*
+input:focus{
+    outline:none;
+}
+*/
+
+/* section1 */
+.wrap {
+    width: 400px;
+    margin: 0 auto;
+    padding: 7% 0 10% 0;
+    color: #444;
+    text-align: center;
+}
+.section1>h1{
+    font-weight:700;
+    font-size:30px;
+    margin-bottom:2%;
+    color:#444;
+    border-bottom: 1px solid #37594b;
+    padding-bottom: 20px;
+}
+.section1>div{width:100%; margin:0 auto;}
+
+
+.sign{padding-top:20px; width:100%;}
+
+/* h6 */
+.section1 h6{margin-bottom:2%;}
+
+/* Tel */
+.tel{width: 100%;}
+input[type=tel], input[type=number]{width:70%; margin-right:10px;}
+.tel, .sms{text-align:left;}
+
+/* 전송, 확인 버튼 */
+.btn{
+    background:#fff;
+    border:1px solid #37594B;
+    width:26%; height:47px;
+    margin-bottom: 20px;;
+}
+.btn:hover{
+    cursor: pointer;
+    background:#37594B;
+    border:none;
+    color:#fff;
+}
+
+/* 약관동의 */
+.check{text-align:left; max-width:100%;}
+.check>div{padding:3%;}
+.check p{font-size:15px; margin-bottom:3%;}
+.check>div:nth-child(2)>p{margin:0;}
+.check>div:nth-child(2){border:1px solid rgb(175, 175, 175);}
+.check>div:nth-child(3){
+    border-right:1px solid rgb(175, 175, 175);
+    border-left:1px solid rgb(175, 175, 175);
+    border-bottom:1px solid rgb(175, 175, 175);
+}
+
+input[type=checkbox]{width:1vw; height:1.5vh; margin:0 1% 0 0; vertical-align: middle;}
+.margin{margin-right:2.5vh;}
+
+.check .color{color:#37594B; font-weight:700;}
+.check>div:nth-child(3)>p:last-child{margin:0;}
+
+/* 가입완료, 돌아가기 버튼 */
+.check>.clear, .check>.reset{padding:0; margin-top:5%;}
+.clear>button, .reset>button{
+    width:100%;
+    height:50px;
+    font-weight:900;
+    font-size:20px;
+}
+.clear>button, .reset>button{
+    color:#37594B;
+    background:#fff;
+    border:1px solid #37594B;
+    cursor:pointer;
+}
+/* 가입완료, 돌아가기 호버 효과 */
+.clear>button:hover,.reset>button:hover{
+    background:#37594B;
+    color:#fff;
+    border:1px solid #37594B;
+}
+.clear>button{margin-top:20px;}
+
+@media all and (max-width:1024px){ /* 모바일 */
+    .section1>div{width:100%;}
+    .wrap{padding: 18% 0;}
+
+    /* 약관동의 */
+    .check p{font-size:15px;}
+    input[type=checkbox]{width:2vw; height:2vh;}
+    .margin{margin-right:3%;}
+
+    /* 가입완료,돌아가기 버튼 */
+    .clear>button,.reset>button{
+        font-size:20px;
+    }
+}
+@media(max-width:375px){
+    .wrap{width:350px;}
+}
