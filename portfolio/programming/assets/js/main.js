@@ -5,12 +5,12 @@
   $(window).on('load', function() {
 
     /* 
-   MixitUp
+    MixitUp
    ========================================================================== */
   $('#portfolio').mixItUp();
 
   /* 
-   One Page Navigation & wow js
+    One Page Navigation & wow js
    ========================================================================== */
     var OnePNav = $('.onepage-nev');
     var top_offset = OnePNav.height() - -0;
