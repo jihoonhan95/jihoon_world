@@ -258,9 +258,7 @@ a.back-to-top i {
   box-shadow: 0 0 4px rgba(0, 0, 0, 0.14), 0 4px 8px rgba(0, 0, 0, 0.28);
 }
 
-a.back-to-top:hover, a.back-to-top:focus {
-  text-decoration: none;
-}
+a.back-to-top:hover, a.back-to-top:focus {text-decoration: none;}
 
 #loader {
   position: fixed;
@@ -280,31 +278,21 @@ a.back-to-top:hover, a.back-to-top:focus {
   margin-top: -40px;
 }
 
-.square-spin img {
-  max-width: 64px;
-}
+.square-spin img {max-width: 64px;}
 
-.section-padding {
-  padding: 60px 0;
-}
-
+.section-padding {padding: 60px 0;}
+#about .img-thumb{padding:60px;}
 #about .img-thumb img {
+  display:block;
+  margin:0 auto;
   border: 8px solid #fff;
   box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2);
 }
 
-.profile-wrapper {
-  padding: 45px 0;
-}
+.profile-wrapper {padding: 45px 0;}
+.profile-wrapper h3{font-size:25px;}
+.profile-wrapper h3 span{font-size:40px;}
 
-.profile-wrapper .btn {
-  margin: 10px 10px 0px 0px;
-}
-
-.profile-wrapper .btn i {
-  vertical-align: middle;
-  margin-right: 5px;
-}
 
 .about-profile {
   position: relative;
@@ -350,18 +338,11 @@ a.back-to-top:hover, a.back-to-top:focus {
   background: rgba(0, 0, 0, 0.5);
 }
 
-.counter-section .counter {
-  padding: 30px 0;
-}
+.counter-section .counter {padding: 30px 0;}
 
-.counter-section .counter .icon {
-  margin-bottom: 30px;
-}
+.counter-section .counter .icon {margin-bottom: 30px;}
 
-.counter-section .counter .icon i {
-  font-size: 48px;
-  color: #00b4d9;
-}
+.counter-section .counter .icon i {font-size: 48px; color: #00b4d9;}
 
 .counter-section .counter p {
   font-size: 18px;
@@ -380,9 +361,7 @@ a.back-to-top:hover, a.back-to-top:focus {
 }
 
 /* Resume */
-.timeline {
-  position: relative;
-}
+.timeline {position: relative;}
 
 .timeline .timelin-title {
   font-size: 20px;
@@ -396,15 +375,9 @@ a.back-to-top:hover, a.back-to-top:focus {
   border-left: 2px solid #f1f1f1;
 }
 
-.timeline li .content-text {
-  background: #f2f2f2;
-  padding: 20px;
-}
+.timeline li .content-text {background: #f2f2f2; padding: 20px;}
 
-.timeline li .line-title {
-  font-size: 16px;
-  line-height: 6px;
-}
+.timeline li .line-title {font-size: 16px; line-height: 6px;}
 
 .timeline li span {
   font-size: 12px;
@@ -412,10 +385,7 @@ a.back-to-top:hover, a.back-to-top:focus {
   display: block;
 }
 
-.timeline li .line-text {
-  color: #888;
-  line-height: 18px;
-}
+.timeline li .line-text {color: #888; line-height: 18px;}
 
 .timeline li:first-child:before {
   border: 0;
@@ -423,9 +393,7 @@ a.back-to-top:hover, a.back-to-top:focus {
   position: relative;
 }
 
-.timeline li:last-child {
-  padding: 0 20px 0px 30px;
-}
+.timeline li:last-child {padding: 0 20px 0px 30px;}
 
 .timeline li:before {
   content: "";
@@ -459,10 +427,7 @@ a.back-to-top:hover, a.back-to-top:focus {
   text-align: center;
 }
 
-.navbar-brand {
-  position: relative;
-  padding: 0px;
-}
+.navbar-brand {position: relative; padding: 0px;}
 
 .top-nav-collapse {
   background: #fff;
@@ -479,13 +444,9 @@ a.back-to-top:hover, a.back-to-top:focus {
   background: #fff !important;
 }
 
-.top-nav-collapse .navbar-brand {
-  top: 0px;
-}
+.top-nav-collapse .navbar-brand {top: 0px;}
 
-.top-nav-collapse .navbar-brand img {
-  width: 65%;
-}
+.top-nav-collapse .navbar-brand img {width: 65%;}
 
 .top-nav-collapse .navbar-nav .nav-link {
   color: #333 !important;
@@ -498,17 +459,11 @@ a.back-to-top:hover, a.back-to-top:focus {
   color: #00b4d9 !important;
 }
 
-.top-nav-collapse .navbar-nav li.active a.nav-link {
-  color: #00b4d9 !important;
-}
+.top-nav-collapse .navbar-nav li.active a.nav-link {color: #00b4d9 !important;}
 
-.indigo {
-  background: #fff;
-}
+.indigo {background: #fff;}
 
-.menu-bg {
-  background: transparent;
-}
+.menu-bg {background: transparent;}
 
 .navbar-expand-lg .navbar-nav .nav-link i {
   font-size: 28px;
@@ -545,17 +500,11 @@ a.back-to-top:hover, a.back-to-top:focus {
   outline: none;
 }
 
-.navbar {
-  padding: 0;
-}
+.navbar {padding: 0;}
 
-.navbar li.active a.nav-link {
-  color: #00b4d9;
-}
+.navbar li.active a.nav-link {color: #00b4d9;}
 
-.dropdown-toggle::after {
-  display: none;
-}
+.dropdown-toggle::after {display: none;}
 
 .dropdown-menu {
   margin: 0;
@@ -708,7 +657,7 @@ a.back-to-top:hover, a.back-to-top:focus {
 3. Hero Area
 ========================================================================== */
 .hero-area-bg {
-  background: url(../img/hero-area.jpg) no-repeat;
+  background: url(../img/sky.jpg) no-repeat;
   background-size: cover;
 }
 
@@ -725,7 +674,7 @@ a.back-to-top:hover, a.back-to-top:focus {
   top: 0px;
   left: 0px;
   background: #0c0808;
-  opacity: 0.6;
+  opacity: 0.2;
 }
 
 #hero-area .contents {
@@ -891,6 +840,18 @@ a.back-to-top:hover, a.back-to-top:focus {
   color: #fff;
 }
 
+.img_text{
+  position:absolute;
+  bottom:20%;
+  left:0%;
+  color: #00b4d9;
+  width:100%;
+  background:#fff;
+  
+  text-align:center;
+  
+}
+
 .shot-item:hover .overlay {
   opacity: 1;
 }
@@ -920,16 +881,8 @@ a:not([href]):not([tabindex]):focus, a:not([href]):not([tabindex]):hover {
   -o-transition: all 0.3s ease-in-out 0s;
 }
 
-.services-item .icon i {
-  font-size: 42px;
-  margin-bottom: 15px;
-  text-align: center;
-  width: 48px;
-  display: block;
-  margin: 0 auto;
-  height: 48px;
-  color: #00b4d9;
-}
+.services-item .icon img {width:40%}
+.services-item .Adobe img {width:32%}
 
 .services-item .services-content h3 {
   margin-top: 10px;
@@ -938,7 +891,6 @@ a:not([href]):not([tabindex]):focus, a:not([href]):not([tabindex]):hover {
 
 .services-item .services-content h3 a {
   font-size: 18px;
-  text-transform: uppercase;
   color: #666;
 }
 
