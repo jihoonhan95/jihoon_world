@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <title>상품구매</title>
+    <link href="../css/payment.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <header>
+        <div class="util wrap">
+            <ul class="flex">
+                <li>
+                    <a href="./l.html">로그인/회원가입</a>
+                </li>
+                <li>
+                    <a href="./shopping_basket.html">장바구니</a>
+                </li>
+                <li>
+                    <a href="./mypage_4.html">마이페이지</a>
+                </li>
+            </ul>
+        </div>
+        <nav class="gnb_background">
+            <div class="flex wrap">
+                <h1>
+                    <a href="../index.html">
+                        <img src="../../img/logo.png" alt="logo" />
+                    </a>
+                </h1>
+                <ul class="flex gnb">
+                    <li>
+                        <a href="./woman_list.html">수제화</a>
+                    </li>
+                    <li>
+                        <a href="./woman_list.html">기성화</a>
+                    </li>
+                    <li>
+                        <a href="./woman_special.html">기획전</a>
+                    </li>
+                    <li>
+                        <a href="./produce.html">제작문의</a>
+                    </li>
+                    <li>
+                        <a href="#">상품후기</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+<section class="payment_wrap">
+    <h2>상품구매</h2>
+    
+    <div class="flex">
+        <section id="section01">
+            <h3>배송지</h3>
+            <form class="flex">
+                <ul class="list">
+                    <li>받는사람</li>
+                    <li>연락처</li>
+                    <li>주소</li>
+                </ul>
+                <ul>
+                    <li>
+                        <input type="text" />
+                    </li>
+                    <li>
+                        <select>
+                            <option>010</option>
+                            <option>011</option>
+                        </select>
+                        -<input type="text" />-<input type="text" />
+                    </li>
+                    <li>
+                        <button>주소찾기</button> <input type="text" />
+                        <p><input type="text" /></p>
+                        <p><input type="text" /></p>
+                        
+                    </li>
+                </ul>
+            </form>
+            <h3>주문상품</h3>
+            <div id="product">
+                <p>깔끔한 디자인 세련된 신상 펌프스 힐</p>
+                <div>
+                    <img src="../../img/woman/wo_img2.jpg" alt="img2" />
+                    <div>
+                        <p>깔끔한 디자인 세련된 신상 펌프스 힐</p>
+                        <ul id="productDetail" class="flex">
+                            <li class="num01">190,000원</li>
+                            <li>|</li>
+                            <li class="productNum">1개</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <h3>결제수단</h3>
+            <ul id="payment" class="flex">
+                <li><a href="#">카드</a></li>
+                <li><a href="#">무통장입금</a></li>
+                <li><a href="#">카카오페이</a></li>
+                <li><a href="#">네이버페이</a></li>
+                <li><a href="#">페이코</a></li>
+                <li><a href="#">핸드폰</a></li> 
+            </ul>
+        </section>
+        <section id="section02">
+            <ul id="sectionTop">
+                <li>결제금액</li>
+                <li>총 상품금액<span class="num01">190,000원</span></li>
+                <li>배송비<span>0원</span></li>
+                <li>&nbsp;</li>
+                <li>최종결제금액<span class="num02">190,000원</span></li>
+            </ul>
+            <ul id="sectionBottom">
+                <li>
+                    <input type="checkbox" class="checkBox" id="allCk" />
+                    <label for="allCk" class="checkList"></label>
+                    <label for="allCk" class="checkText">아래 내용에 모두 동의합니다.(필수)</label>
+                </li>
+                <li>
+                    <ul>
+                        <li>
+                            <input type="checkbox" class="checkBox allChk" id="chkSel" />
+                            <label for="chkSel" class="checkList"></label>
+                            <label for="chkSel" class="checkText">개인정보수집이용 및 제 3자 제공 동의(필수)</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" class="checkBox allChk" id="chkSel01" />
+                            <label for="chkSel01" class="checkList"></label>
+                            <label for="chkSel01" class="checkText">개인정보 제 3자 제공</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" class="checkBox allChk" id="chkSel02" />
+                            <label for="chkSel02" class="checkList"></label>
+                            <label for="chkSel02" class="checkText">개인정보 수집 및 이용</label>
+                        </li>
+                        <li>본인은 만 14세 이상이며,주문 내용을 확인하였습니다.</li>
+                    </ul>
+                </li>
+            </ul>
+            <p><a href="./payment2.html"><span class="num02">190,000</span>원 결제하기</a></p>
+        </section>
+    </div>
+</section>
+<footer>
+        <div>
+            <div class="flex">
+                <ul class="footer_menu flex">
+                    <li>
+                        <a href="#">홈페이지 이용약관</a>
+                    </li>
+                    <li>
+                        <a href="#">개인정보처리방침</a>
+                    </li>
+                    <li>
+                        <a href="#">영상정보처리기기운영방침</a>
+                    </li>
+                    <li>
+                        <a href="#">위치기반서비스 이용약관</a>
+                    </li>
+                </ul>
+                <ul class="sns flex">
+                    <li>
+                        <a href="#">
+                            <img src="../../img/facebook.png" alt="facebook" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="../../img/insta.png" alt="instagram" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="../../img/youtube.png" alt="youtube" />
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <address class="flex">
+                <div>
+                    <p>인천광역시 서구 공촌동 공촌공원 미끄럼틀 1차</p>
+                    <p>대표 : 한라봉  |  사업자번호 0831-1995-15-7605624</p>
+                    <p>대표번호 : 010-3142-815 E-mail : uio0129@naver.com</p>
+                    <p>Copyright &COPY; animaPlayer Inc. All Right Reserved.</p>
+                </div>
+                <div>
+                    <img src="../../img/logo3.png" alt="logo" />
+                </div>
+            </address>
+        </div>
+    </footer>
+
+</body>
+<script src="../js/payment.js"></script>
+</html>

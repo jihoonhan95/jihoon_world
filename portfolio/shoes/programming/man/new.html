@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <title>회원가입</title>
+    <link href="../css/new_style.css" rel="stylesheet" type="text/css" />
+    
+</head>
+<body>
+    <header>
+        <div class="util wrap">
+            <ul class="flex">
+                <li>
+                    <a href="./l.html">로그인/회원가입</a>
+                </li>
+                <li>
+                    <a href="./shopping_basket.html">장바구니</a>
+                </li>
+                <li>
+                    <a href="./mypage_4.html">마이페이지</a>
+                </li>
+            </ul>
+        </div>
+        <nav class="gnb_background">
+            <div class="flex wrap">
+                <h1>
+                    <a href="../index.html">
+                        <img src="../../img/logo.png" alt="logo" />
+                    </a>
+                </h1>
+                <ul class="flex gnb">
+                    <li>
+                        <a href="./man_list.html">수제화</a>
+                    </li>
+                    <li>
+                        <a href="./man_list.html">기성화</a>
+                    </li>
+                    <li>
+                        <a href="./man_special.html">기획전</a>
+                    </li>
+                    <li>
+                        <a href="./produce.html">제작문의</a>
+                    </li>
+                    <li>
+                        <a href="#">상품후기</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="new_wrap">
+        <section class="section1">
+            <h1>JOIN US</h1>
+            <div class="sign">
+                <div class="id">
+                    <input type="text" id="id" placeholder="아이디" name="user_id" />
+                </div>
+                <div class="password">
+                    <input type="password" id="password" placeholder=" 비밀번호 (4~12자리의 영문 대소문자와 숫자로만 입력)" name="user_psw" />
+
+                </div>
+                <div class="password">
+                    <input type="password" id="password_chk" placeholder=" 비밀번호 확인" name="user_psw" />
+                </div>
+                <div class="name">
+                    <input type="text" id="name" placeholder=" 이름" name="user_name" />
+                </div>
+                <div class="tel">
+                    <h6>휴대폰번호</h6>
+                    <input type="tel" id="tel" placeholder="" name="user_tel" />
+                    <button class="btn">전송</button>
+                </div>
+                <div class="sms">
+                    <h6>SMS 인증번호</h6>
+                    <input type="number" id="number" placeholder="" name="user_sns" />
+                    <button class="btn">확인</button>
+                </div>
+                <div class="check">
+                    <h6>약관동의</h6>
+                    <div>
+                        <p>
+                            <input type="checkbox" id="allChk" class="checkbox">
+                            <label for="allChk">전체 약관에 모두 동의 합니다.</label>
+                        </p>
+                    </div>
+                    <div>
+                        <p>
+                            <input type="checkbox" id="essential1" class="checkbox">
+                            <label for="essential1">이용약관 <span class="color">(필수)</span></label>
+                        </p>
+                        <p>
+                            <input type="checkbox" id="essential2" class="checkbox">
+                            <label for="essential2">개인정보 수집 및 이용 안내 <span class="color">(필수)</span></label>
+                        </p>
+                        <p>
+                            <input type="checkbox" id="essential3" class="checkbox">
+                            <label for="essential3">만 14세 이상입니다. <span class="color">(필수)</span></label>
+                        </p>
+                        <p>
+                            <input type="checkbox" id="market" class="checkbox">
+                            <label for="market">마케팅 수신동의 <span class="margin">(선택)</span></label>
+                            <input type="checkbox" id="email" class="size checkbox">
+                            <label for="email">이메일</label>
+                            <input type="checkbox" id="sns" class="size checkbox">
+                            <label for="sns">SMS,카카오톡</label>
+                        </p>
+                    </div>
+                    <div class="clear"><button type="button" onClick="checkz()">가입완료</button></div>
+                    <div class="reset"><button type="button" onClick="location.href='./h1_main.html';">돌아가기</button></div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+
+    <footer>
+        <div>
+            <div class="flex">
+                <ul class="footer_menu flex">
+                    <li>
+                        <a href="#">홈페이지 이용약관</a>
+                    </li>
+                    <li>
+                        <a href="#">개인정보처리방침</a>
+                    </li>
+                    <li>
+                        <a href="#">영상정보처리기기운영방침</a>
+                    </li>
+                    <li>
+                        <a href="#">위치기반서비스 이용약관</a>
+                    </li>
+                </ul>
+                <ul class="sns flex">
+                    <li>
+                        <a href="#">
+                            <img src="../../img/facebook.png" alt="facebook" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="../../img/insta.png" alt="instagram" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="../../img/youtube.png" alt="youtube" />
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <address class="flex">
+                <div>
+                    <p>인천광역시 서구 공촌동 공촌공원 미끄럼틀 1차</p>
+                    <p>대표 : 한라봉  |  사업자번호 0831-1995-15-7605624</p>
+                    <p>대표번호 : 010-3142-815 E-mail : uio0129@naver.com</p>
+                    <p>Copyright &COPY; animaPlayer Inc. All Right Reserved.</p>
+                </div>
+                <div>
+                    <img src="../../img/logo3.png" alt="logo" />
+                </div>
+            </address>
+        </div>
+    </footer>
+
+
+    <script src="../js/new.js"></script>
+
+</body>
+</html>
