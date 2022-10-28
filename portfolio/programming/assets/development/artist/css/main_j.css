@@ -37,7 +37,7 @@ header>*{
    top:50%;
    transform:translateY(-50%);
 }
-#logo{width:180px; height:60px;}
+#logo{width:220px; height:60px;}
 #logo>a{
    display:block;
    width:100%; height:100%;
@@ -78,12 +78,11 @@ header>h2{right:0;}
    height:100px;
    overflow:hidden;
 }
-
+#line_bnr img{width:51%;}
 #line_bnr>.wrap{height:100px;}
 #line_bnr>.wrap>figure{
    position:absolute;
    left:0;
-   height:100px;
    width:70%;
 }
 #line_bnr>.wrap>figure>figcaption{
