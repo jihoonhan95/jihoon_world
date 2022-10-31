@@ -670,6 +670,11 @@ a.back-to-top:hover, a.back-to-top:focus {text-decoration: none;}
   top: 50%;
   color: #fff;
 }
+.overlay .design_icon {
+  left: 50%;
+  top: 50%;
+  transition: -50%,-50%;
+}
 .overlay .link {
   position: absolute;
   left: 60%;
