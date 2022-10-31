@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>고객관리</title> 
+    <link href="./css/c_style.css" rel="stylesheet" type="text/css" />
+    <link href="./css/manager_header.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="./js/jQueryUI/css/jquery-ui.css">
+    <script src="./js/jQueryUI/js/jquery.js"></script>
+    <script src="./js/jQueryUI/js/jquery-ui.js"></script>
+    <script src="./js/jQueryUI/js/jquery-ui.min.js"></script> 
+    <script src="./js/c1-1.js"></script> 
+    <script src="./js/p.js"></script> 
+</head>
+<body>
+    <header>
+        <div class="wrap header_flex">
+            <div class="header_flex logo">
+                <h1>
+                    <a href="./e_main.html">
+                        <img src="./img/icon/logo.png" alt="logo" />
+                    </a>
+                </h1>
+            </div>
+            <div>
+                <div class="header_flex header_top">
+                    <ul class="header_flex">
+                        <li>
+                            <a href="e_main.html">
+                                <img src="./img/icon/menu.png" alt="menu" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./img/icon/myp.png" alt="mypage" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">접속통계</a>
+                        </li>
+                        <li>
+                            <a href="#">1:1 문의</a>
+                        </li>
+                        <li>
+                            <a href="#">고객센터</a>
+                        </li>
+                        <li>
+                            <a href="#">HELP</a>
+                        </li>
+                    </ul>
+                    <div><a href="../h1_main.html">활명수 페이지 바로가기</a></div>
+                </div>
+                <div class="header_under">
+                    <ul class="header_flex gnb">
+                        <li>
+                            <a href="p.html">상품관리</a>
+                        </li>
+                        <li>
+                            <a href="#">주문관리</a>
+                        </li>
+                        <li>
+                            <a href="c.html">회원관리</a>
+                        </li>
+                        <li>
+                            <a href="#">디자인관리</a>
+                        </li>
+                        <li>
+                            <a href="#">모바일관리</a>
+                        </li>
+                        <li>
+                            <a href="#">마케팅</a>
+                        </li>
+                        <li>
+                            <a href="#">앱스토어</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class=" wrap align">
+        <aside class="active">
+            <ul>
+                <li class="menu">
+                    <a>회원관리</a>
+                </li>
+                <li class="menu">
+                    <a href="#">회원관리</a>
+                        <ul class="hide">
+                            <li><a href="c.html">회원관리</a></li>
+                            <li><a href="c1-1.html">회원정보 조회</a></li>
+                            <li><a href="#">회원가입/탈퇴관리</a></li>
+                        </ul>
+                </li>
+                <li class="menu">
+                    <a href="#">알림설정</a>
+                        <ul class="hide">
+                            <li><a href="#">대량메일 전송관리</a></li>
+                            <li><a href="#">메세지 발송 관리</a></li>
+                            <li><a href="#">재입고sms관리</a></li>
+                        </ul>
+                </li>
+            </ul>
+        </aside>
+
+        <div class="t_wrap">
+            <div class="section1">
+                <h2>회원현황</h2>
+                <table>    
+                    <thead>               
+                        <tr>
+                            <th>신규회원</th>
+                            <th>방문회원</th>
+                            <th>탈퇴회원</th>
+                            <th>Total</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>0</strong>명</td>   
+                            <td><strong>0</strong>명</td>   
+                            <td><strong>0</strong>명</td>   
+                            <td><strong>0</strong>명</td>       
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="section2">
+                <h2>최근가입회원</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>가입일시</th>
+                            <th>아이디</th>
+                            <th>이름</th>
+                            <th>메모</th>
+                            <th>등급</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>22/08/26</td>   
+                            <td>rkskek</td>   
+                            <td>차은우</td>   
+                            <td>.....</td>   
+                            <td>일반</td>       
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="text">
+                <p>·최근 가입한 고객 3명까지 표기됩니다.</p>
+                <p>·고객이 메모를 작성하였을 경우 표기됩니다.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

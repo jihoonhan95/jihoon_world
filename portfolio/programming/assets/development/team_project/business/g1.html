@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <title>브랜드 스토리</title>
+    <link href="./css/g1_style.css" rel="stylesheet" type="text/css" />
+    <link href="./css/animate.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="./css/common.min.css">
+    <script>
+        var timer = setTimeout(function(){
+            $(".sec1_t01").fadeIn(2000);
+            },700);
+        var timer = setTimeout(function(){
+            $(".sec1_t02").fadeIn(2000);
+            },1400);
+        var timer = setTimeout(function(){
+            $(".sec1_t03").fadeIn(2000);
+            },2100);
+    </script>
+    <script>
+        $(document).ready(function() {
+
+            $(window).scroll( function(){
+
+                $('.line01').each( function(i){
+
+                    var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+
+                    var bottom_of_window = $(window).scrollTop() + $(window).height();
+
+                if( bottom_of_window > bottom_of_object/2 ){
+
+                $(this).animate({'opacity':'1'},500);
+                }}); 
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function() {
+
+            $(window).scroll( function(){
+
+                $('.line02').each( function(i){
+
+                    var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+
+                    var bottom_of_window = $(window).scrollTop() + $(window).height();
+
+                if( bottom_of_window > bottom_of_object/2 ){
+
+                $(this).animate({'opacity':'1'},1000);
+                }}); 
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function() {
+
+            $(window).scroll( function(){
+
+                $('.line03').each( function(i){
+
+                    var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+
+                    var bottom_of_window = $(window).scrollTop() + $(window).height();
+
+                if( bottom_of_window > bottom_of_object/2 ){
+
+                $(this).animate({'opacity':'1'},1500);
+                }}); 
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function() {
+
+            $(window).scroll( function(){
+
+                $('.line04').each( function(i){
+
+                    var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+
+                    var bottom_of_window = $(window).scrollTop() + $(window).height();
+
+                if( bottom_of_window > bottom_of_object/2 ){
+
+                $(this).animate({'opacity':'1'},2000);
+                }}); 
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function() {
+
+            $(window).scroll( function(){
+
+                $('.line05').each( function(i){
+
+                    var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+
+                    var bottom_of_window = $(window).scrollTop() + $(window).height();
+
+                if( bottom_of_window > bottom_of_object/2 ){
+
+                $(this).animate({'opacity':'1'},2500);
+                }}); 
+            });
+        });
+    </script>
+<body>
+    <header>
+        <div id="header">
+            <ul class="flex" id="util">
+                <li><a href="./l.html">로그인</a></li>
+                <li><a href="./l2-1.html">회원가입</a></li>
+                <li><a href="./s.html">제품판매약국 찾기</a></li>
+            </ul>
+            <nav class="flex"> 
+                <h1 id="logo">
+                    <a href="./h1_main.html">
+                        <img src="./img/icon/logo.png" alt="logo" />
+                    </a>
+                </h1>
+                <ul id="gnb">
+                    <li>
+                        <a href="./g1.html">브랜드 스토리</a>
+                    </li>
+                    <li>
+                        <a href="./g2.html">제품정보</a>
+                    </li>
+                    <li>
+                        <a href="./g3.html">상품구매</a>
+                    </li>
+                    <li>
+                        <a href="./m1.html">마이페이지</a>
+                    </li>
+                    <li>
+                        <a href="./m1.html"><img src="./img/icon/mypage.png" alt="mypage" /></a>
+                        <a href="./b-2.html"><img src="./img/icon/shoppingcart.png" alt="shoppingcart" /></a>
+                    </li>
+                    <li>
+                        <a href="./b-2.html">장바구니</a>
+                    </li>
+                    <li>
+                        <a href="./s.html">
+                            제품판매약국찾기
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./l.html">
+                            로그인/회원가입
+                        </a>
+                    </li>
+                </ul>
+                <div id="m_btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+<section id="wrap">
+    <h2>브랜드 스토리</h2>
+    <div class="section1"><!--section1 (비주얼 배너)-->
+        <div>
+            <h3 class="sec1_t01">국민 소화제 활명수</h3>
+            <h3 class="sec1_t02">생명의 물</h3>
+            <h3 class="sec1_t03">10여가지 생약</h3>
+            
+            <img class="bottle" src="./img/g1_img/sec01_img.png" alt="bottle" />
+            <p>
+                '생명을 살리는 물' 이라는 의미를 지닌 활명수는 1897년부터 125년간<br/>
+                함께 해 온 국민 소화제입니다. 10여가지 생약이 들어가고,<br/>
+                보존제가 첨가되지 않아 유소아(만 1세이상)도 복용가능한<br/>
+                효과빠른 소화제, '활명수'를 만나보세요.
+            </p>
+            <img class="line01" src="./img/g1_img/sec01_line.png" alt="01_line" />
+            </p>
+            <img class="line02" src="./img/g1_img/sec01_line.png" alt="02_line" />
+            </p>
+            <img class="line03" src="./img/g1_img/sec01_line.png" alt="03_line" />
+            </p>
+            <img class="line04" src="./img/g1_img/sec01_line.png" alt="04_line" />
+            </p>
+            <img class="line05" src="./img/g1_img/sec01_line.png" alt="05_line" />
+        </div>
+    </div>
+    <div class="section2"><!--section2 (첨가된 생약)-->
+        <div>
+            <h3>
+                10여가지<br/>생약이 들어간<br/>빠르고 효과 좋은<br/>소화제
+            </h3>
+            <div class="m_01">
+                <div>
+                    <p class="m_effect">
+                        진경, 진통, 식욕부진 개선,<br/>가슴과 몸의 답답함 완화.
+                    </p>
+                    <img src="./img/g1_img/medicine01_line.png" alt="이선약_라인" />
+                </div>
+                <div>
+                    <p class="m_name">이선약</p>
+                        <img class="m_img01" src="./img/g1_img/medicine01.png" alt="이선약" />
+                </div>
+            </div>
+            <div class="m_02">
+                <div>
+                    <p class="m_name">고추틴크</p>
+                        <img class="m_img02" src="./img/g1_img/medicine10.png" alt="고추틴크" />
+                </div>
+                <div>
+                    <p class="m_effect">
+                        속을 따뜻하게 하고 식욕 촉진.<br/>복통/구토/설사에 효과적.<br/>위산분비 억제, 경련 완화
+                    </p>
+                    <img src="./img/g1_img/medicine10_line.png" alt="고추틴크_라인" />
+                </div>
+            </div>
+            <div class="m_03">
+                <div>
+                    <p class="m_effect">
+                        혈액순환을 좋게하여 기운을 다스림.<br/>강한 진통효과, 구토/설사에 효과적.
+                    </p>
+                    <img src="./img/g1_img/medicine02_line.png" alt="현호색_라인" />
+                </div>
+                <div>
+                    <p class="m_name">현호색</p>
+                        <img class="m_img03" src="./img/g1_img/medicine02.png" alt="현호색" />
+                </div>
+            </div>
+            <div class="m_04">
+                <div>
+                    <p class="m_name">건강</p>
+                        <img class="m_img04" src="./img/g1_img/medicine09.png" alt="건강" />
+                </div>
+                <div>
+                    <p class="m_effect">
+                        혈액순환을 좋게함. 소화액 분비 촉진.<br/>식욕부진, 구역, 구토, 설사, 가스참, 위염<br/>등의 증상 개선.
+                    </p>
+                    <img src="./img/g1_img/medicine09_line.png" alt="건강_라인" />
+                </div>
+            </div>
+            <div class="m_05">
+                <div>
+                    <p class="m_effect">
+                        소화관 운동 강화. 복부 팽만감 완화.<br/>음식물과 가스 배설 촉진. 통증 완화.<br/>구토와 식욕부진에 효과적.
+                    </p>
+                    <img src="./img/g1_img/medicine03_line.png" alt="진피_라인" />
+                </div>
+                <div>
+                    <p class="m_name">진피</p>
+                        <img class="m_img05" src="./img/g1_img/medicine03.png" alt="진피" />
+                </div>
+            </div>
+            <div class="m_06">
+                <div>    
+                    <p class="m_name">육두구</p>
+                        <img class="m_img06" src="./img/g1_img/medicine08.png" alt="육두구" />
+                </div>
+                <div>
+                    <p class="m_effect">
+                        위를 따뜻하게 하며 구토와 설사,<br/>통증을 멈춤. 신경 안정을 도움.
+                    </p>
+                    <img src="./img/g1_img/medicine08_line.png" alt="육두구_라인" />
+                </div>
+            </div>
+            <div class="m_07">
+                <div>
+                    <p class="m_effect">
+                        속을 따뜻하게 하고 위액 분비 촉진.<br/>소화기능 향상. 복통과 설사 치료.<br/>구토, 식욕부진 개선.
+                    </p>
+                    <img src="./img/g1_img/medicine04_line.png" alt="육계_라인" />
+                </div>
+                <div>   
+                    <p class="m_name">육계</p>
+                        <img class="m_img07" src="./img/g1_img/medicine04.png" alt="육계" />
+                </div> 
+            </div>
+            <div class="m_08">
+                <div>    
+                    <p class="m_name">후박</p>
+                        <img class="m_img08" src="./img/g1_img/medicine07.png" alt="후박" />
+                </div>
+                <div>
+                    <p class="m_effect">
+                        위를 튼튼하게 함. 체내 기를 순환시켜<br/>더부룩함과 통증 완화.<br/>신경 안정을 도움.
+                    </p>
+                    <img src="./img/g1_img/medicine07_line.png" alt="후박_라인" />
+                </div>
+            </div>
+            <div class="m_09">
+                <div>
+                    <p class="m_effect">
+                        위를 따뜻하게 하여 구역, 구토<br/> 복통을 치료.
+                    </p>
+                    <img src="./img/g1_img/medicine05_line.png" alt="정향_라인" />
+                </div>
+                <div>
+                    <p class="m_name">정향</p>
+                        <img class="m_img09" src="./img/g1_img/medicine05.png" alt="정향" />
+                </div>
+            </div>
+            <div class="m_10">
+                <div>
+                    <p class="m_name">창출</p>
+                        <img class="m_img10" src="./img/g1_img/medicine06.png" alt="창출" />
+                </div>
+                <div>
+                    <p class="m_effect">
+                        위를 튼튼하게 함. 식욕부진, 구토, 설사 치료.<br/>스트레스로 인한 기능성 소화장애에 효과적.
+                    </p>
+                    <img src="./img/g1_img/medicine06_line.png" alt="창출_라인" />
+                </div>
+            </div>
+            <div id="m_01">
+                <div>
+                    <p class="m_name">이선약</p>
+                        <img class="m_img" src="./img/g1_img/medicine01.png" alt="이선약" />
+                </div>
+                <div>
+                    <p class="m_effect">
+                        진경, 진통, 식욕부진 개선,<br/>가슴과 몸의 답답함 완화.
+                    </p>
+                </div>
+            </div>
+            <div id="m_02">
+                <div>
+                    <p class="m_name">고추틴크</p>
+                        <img class="m_img" src="./img/g1_img/medicine10.png" alt="고추틴크" />
+                </div>
+                <div>
+                    <p class="m_effect">
+                        속을 따뜻하게 하고 식욕 촉진.<br/>복통/구토/설사에 효과적.<br/>위산분비 억제, 경련 완화
+                    </p>
+                </div>
+            </div>
+            <div id="m_03">
+                <div>
+                    <p class="m_name">현호색</p>
+                        <img class="m_img" src="./img/g1_img/medicine02.png" alt="현호색" />
+                </div>
+                <div>
+                    <p class="m_effect">
+                        혈액순환을 좋게하여 기운을 다스림.<br/>강한 진통효과, 구토/설사에 효과적.
+                    </p>
+                </div>
+            </div>
+            <div id="m_04">
+                <div>
+                    <p class="m_name">건강</p>
+                        <img class="m_img" src="./img/g1_img/medicine09.png" alt="건강" />
+                </div>
+                <div>
+                    <p class="m_effect">
+                        혈액순환을 좋게함. 소화액 분비 촉진.<br/>식욕부진, 구역, 구토, 설사, 가스참, 위염<br/>등의 증상 개선.
+                    </p>
+                </div>
+            </div>
+            <div id="m_05">
+                <div>
+                    <p class="m_name">진피</p>
+                        <img class="m_img" src="./img/g1_img/medicine03.png" alt="진피" />
+                </div>
+                <div>
+                    <p class="m_effect">
+                        소화관 운동 강화. 복부 팽만감 완화.<br/>음식물과 가스 배설 촉진. 통증 완화.<br/>구토와 식욕부진에 효과적.
+                    </p>
+                </div>
+            </div>
+            <div id="m_06">
+                <div>
+                    <p class="m_name">육두구</p>
+                        <img class="m_img" src="./img/g1_img/medicine08.png" alt="육두구" />
+                </div>
+                <div>
+                    <p class="m_effect">
+                        위를 따뜻하게 하며 구토와 설사,<br/>통증을 멈춤. 신경 안정을 도움.
+                    </p>
+                </div>
+            </div>
+            <div id="m_07">
+                <div>
+                    <p class="m_name">육계</p>
+                        <img class="m_img" src="./img/g1_img/medicine04.png" alt="육계" />
+                </div>
+                <div>
+                    <p class="m_effect">
+                        속을 따뜻하게 하고 위액 분비 촉진.<br/>소화기능 향상. 복통과 설사 치료.<br/>구토, 식욕부진 개선.
+                    </p>
+                </div>
+            </div>
+            <div id="m_08">
+                <div>
+                    <p class="m_name">후박</p>
+                        <img class="m_img" src="./img/g1_img/medicine07.png" alt="후박" />
+                </div>
+                <div>
+                    <p class="m_effect">
+                        위를 튼튼하게 함. 체내 기를 순환시켜<br/>더부룩함과 통증 완화.<br/>신경 안정을 도움.
+                    </p>
+                </div>
+            </div>
+            <div id="m_09">
+                <div>
+                    <p class="m_name">정향</p>
+                        <img class="m_img" src="./img/g1_img/medicine05.png" alt="정향" />
+                </div>
+                <div>
+                    <p class="m_effect">
+                        위를 따뜻하게 하여 구역, 구토<br/> 복통을 치료.
+                    </p>
+                </div>
+            </div>
+            <div id="m_10">
+                <div>
+                    <p class="m_name">창출</p>
+                        <img class="m_img" src="./img/g1_img/medicine06.png" alt="창출" />
+                </div>
+                <div>
+                    <p class="m_effect">
+                        위를 튼튼하게 함. 식욕부진, 구토, 설사 치료.<br/>스트레스로 인한 기능성 소화장애에 효과적.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        $(".m_img01").click(function(){
+            $("#m_01").css("display","block");
+        });
+        $("#m_01").click(function(){
+            $("#m_01").css("display","none");
+        });
+        $(".m_img02").click(function(){
+            $("#m_02").css("display","block");
+        });
+        $("#m_02").click(function(){
+            $("#m_02").css("display","none");
+        });
+        $(".m_img03").click(function(){
+            $("#m_03").css("display","block");
+        });
+        $("#m_03").click(function(){
+            $("#m_03").css("display","none");
+        });
+        $(".m_img04").click(function(){
+            $("#m_04").css("display","block");
+        });
+        $("#m_04").click(function(){
+            $("#m_04").css("display","none");
+        });
+        $(".m_img05").click(function(){
+            $("#m_05").css("display","block");
+        });
+        $("#m_05").click(function(){
+            $("#m_05").css("display","none");
+        });
+        $(".m_img06").click(function(){
+            $("#m_06").css("display","block");
+        });
+        $("#m_06").click(function(){
+            $("#m_06").css("display","none");
+        });
+        $(".m_img07").click(function(){
+            $("#m_07").css("display","block");
+        });
+        $("#m_07").click(function(){
+            $("#m_07").css("display","none");
+        });
+        $(".m_img08").click(function(){
+            $("#m_08").css("display","block");
+        });
+        $("#m_08").click(function(){
+            $("#m_08").css("display","none");
+        });
+        $(".m_img09").click(function(){
+            $("#m_09").css("display","block");
+        });
+        $("#m_09").click(function(){
+            $("#m_09").css("display","none");
+        });
+        $(".m_img10").click(function(){
+            $("#m_10").css("display","block");
+        });
+        $("#m_10").click(function(){
+            $("#m_10").css("display","none");
+        });
+        </script>
+    <div class="section3"><!--section3 (History)-->
+        <h3>125년 당신 곁에,<br/>국민 소화제 <span class="color2">활명수</span>의 역사를 만나보세요.</h3>
+        <div class="h_01 wow fadeInLeft">
+            <img class="glass" src="./img/g1_img/history01.png" alt="초기 활명수" />
+            <img src="./img/g1_img/history_dotted_line01.png" alt="점선01" class="dot_r" />
+            <div class="txt_r">
+                <h4>1897년.</h4>
+                <p>
+                    궁중 선전관 노천 민병호 선생이<br/>
+                    한의학과 서양학이 만난<br/>
+                    최초의 약'활명수'를 개발.
+                </p>
+            </div>
+        </div>
+        <div class="h_02 wow fadeInRight">
+            <img src="./img/g1_img/history_dotted_line02.png" alt="점선02" class="dot_l" />
+            <img class="glass" src="./img/g1_img/history02.png" alt="1910년" />
+            <div class="txt_l">
+                <h4>1910년.</h4>
+                <p>
+                    유사제품이 범람하여, 상표등록과 보호에<br/>
+                    선구적으로 대응. 활명수의 상징 부채표를<br/>
+                    우리나라 최초로 상표등록.
+                </p>
+            </div>
+        </div>
+        <div class="h_03 wow fadeInLeft">
+            <img class="glass" src="./img/g1_img/history03.png" alt="1967년" />
+            <img src="./img/g1_img/history_dotted_line02.png" alt="점선02" class="dot_r" />
+            <div class="txt_r">
+                <h4>1967년.</h4>
+                <p>
+                    콜라 등, 탄산음료가 국내에서 유행하던 시기,<br/>
+                    속 시원한 청량감을 보강한'까스 활명수'발매.
+                </p>
+            </div>
+        </div>
+        <div class="h_04 wow fadeInRight">
+            <img src="./img/g1_img/history_dotted_line03.png" alt="점선03" class="dot_l" />
+            <img class="glass" src="./img/g1_img/history04.png" alt="1991년" />
+            <div class="txt_l">
+                <h4>1991년.</h4>
+                <p>
+                    소화불량 트렌드 변화에 다라 기존 '까스 활명수'를<br/>
+                    업그레이드 한'까스 활명수 <span class="small_txt">큐</span>'를 발매.
+                </p>
+            </div>
+        </div>
+        <div class="h_05 wow fadeInLeft">
+            <img class="glass" src="./img/g1_img/history05.png" alt="1996년" />
+            <img src="./img/g1_img/history_dotted_line04.png" alt="점선04" class="dot_r" />
+            <div class="txt_r">
+                <h4>1996년.</h4>
+                <p>
+                    한국 기네스협회로부터<br/>
+                    최초의 등록상표(부채표),<br/>
+                    최초의 등록상품(활명수)으로<br/>
+                    기록을 인정하는 인증서를 받음.
+                </p>
+            </div>
+        </div>
+        <div class="h_06 wow fadeInRight">
+            <img src="./img/g1_img/history_dotted_line01.png" alt="점선01" class="dot_l" />
+            <img class="glass" src="./img/g1_img/history06.png" alt="2011년" />
+            <div class="txt_l">
+                <h4>2011년.</h4>
+                <p>
+                    액체소화제 전제품을 첨단 생산시설에서<br/>
+                    과학적인 살균공정으로 생산.<br/>
+                    보존제 무첨가.
+                </p>
+            </div>
+        </div>
+        <div class="h_07 wow fadeInUp">
+            <img class="glass" src="./img/g1_img/history07.png" alt="현재" />
+            <h4>현재.</h4>
+            <p class="h_txt">
+                약국에서 구매할 수 있는 일반의약품 까스활명수큐, 활명수, 미인활명수, 꼬마활명수,<br/>
+                활명수·유 와 편의점이나 대형마트에서 구매 가능한 의약외품 까스활, 미인활 등<br/>
+                더욱 다양해진 활명수.
+            </p>
+        </div>
+    </div>
+    <div class="section4 jd-slider slider3"><!--section4 (광고 영상)-->
+        <h3>
+            오늘도 잘 <span>소화</span>하세요
+        </h3>
+        <h4>
+            소화엔 역시 활명수, 영상으로 확인하세요!
+        </h4>
+        <div id="#container" class="slide-inner">
+            <ul class="slide-area">
+                <li>
+                    <video controls poster="./img/g1_img/01.png" width="580" height="350">
+                        <source src="./img/video/01.mp4" type="video/mp4">
+                    </video>
+                </li>
+                <li>
+                    <video controls poster="./img/g1_img/02.png" width="580" height="350">
+                        <source src="./img/video/02.mp4" type="video/mp4">
+                    </video>
+                </li>
+                <li>
+                    <video controls poster="./img/g1_img/03.png" width="580" height="350">
+                        <source src="./img/video/03.mp4" type="video/mp4">
+                    </video>
+                </li>
+                <li>
+                    <video controls poster="./img/g1_img/04.png" width="580" height="350">
+                        <source src="./img/video/04.mp4" type="video/mp4">
+                    </video>
+                </li>
+                <li>
+                    <video controls poster="./img/g1_img/05.png" width="580" height="350">
+                        <source src="./img/video/05.mp4" type="video/mp4">
+                    </video>
+                </li>
+            </ul>
+            <a class="prev" href="#">
+                <i class="fas fa-angle-left fa-2x"></i>
+            </a>
+            <a class="next" href="#">
+                <i class="fas fa-angle-right fa-2x"></i>
+            </a>
+        </div>
+        <div class="controller">
+            <div class="indicate-area"></div>
+        </div>
+    </div>
+</section>
+<footer>
+    <div>
+        <div id="footer_sns">
+            <ul class="flex">
+                <li>
+                    <a href="#">
+                        <img src="./img/g1_img/f.png" alt="facebook" />
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./img/g1_img/u.png" alt="youtube" />
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./img/g1_img/in.png" alt="instagram" />
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="flex" id="footer_under">
+            <ul>
+                <li>
+                    <a href="#">
+                        <img src="./img/g1_img/ft_logo.png" alt="logo" />
+                    </a>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                <p>
+                    04552 서울특별시 중구 남대문로 9길 24 패스트파이브 타워 6~8층 &nbsp;&nbsp; 대표이사 : 유준하, 한종현
+                </p>
+                <p>
+                    Tel : 02-2021-9300 &nbsp;&nbsp; Mail : dogwha@dong-wha.co.kr &nbsp;&nbsp; 사업자등록번호 : 110-81-00102
+                </p>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a href="#">개인정보 취급 방침</a>
+                </li>
+                <li>
+                    Copyright (c) DONG WHA PHARM. CO., LTD ALL Rights Reserved.
+                </li>
+                <li><a href="./manager_page/e_main.html">관리자 페이지</a></li>
+            </ul>
+        </div>
+    </div>
+<script src="./js/wow.js"></script>
+<script src="./js/jquery.js"></script>
+<script src="./js/jquery.jdSlider-latest.min.js"></script>
+<script src="./js/common.js"></script>
+<script>
+    wow = new WOW(
+       {
+        animateClass: 'animated',
+        offset:100,
+        live:true
+       }
+    );
+    wow.init();
+</script>
+<script>
+    window.onload = function () {
+        $(".slider3").jdSlider({
+            wrap:'.slide-inner',
+            isAuto: true,
+            isLoop:true,
+            speed:1000,
+            interval:1000,
+            responsive:[{
+                viewSize:768,
+                settings:{
+                    slideShow: 3,
+                    slideToscroll:2
+                }
+            }]
+        });
+    };
+</script>
+</footer>
+</body>
+</html>

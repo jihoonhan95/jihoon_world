@@ -1,0 +1,221 @@
+@charset  "utf-8";
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.5/dist/web/static/pretendard.css");
+@import url('https://webfontworld.github.io/sebang/SebangGothic.css');
+/*
+font-family: 'Pretendard';
+font-family: 'SebangGothic';
+*/
+
+
+*{margin:0; padding:0; list-style:none;}
+a:hover, a:active, a:link, a:visited{text-decoration:none; color:#333;}
+html{font-family: 'Pretendard';}
+
+/* 공통 */
+.flex{display:flex; flex-flow:row wrap}
+header>div,footer>div{max-width:1440px; margin:0 auto;}
+/* 헤더 */
+header{border-bottom:2px solid #d3d3d3; height:125px;}
+#util,#footer_sns>ul{justify-content:flex-end;}
+#util a{font-size:1.5vh;}
+#util a:hover{color:#36594C; font-weight:600;}
+#util>li{margin:15px 0 0 10px;}
+#util>li::after{
+    content:'|';
+    margin-left:10px;
+}
+#util>li:nth-child(3)::after{content:''; margin: 0;}
+nav>h1{width:15%;}
+
+nav>h1 img{width:60%;}
+nav>ul{width:82%;}
+#gnb{
+    display:block;
+    height:93px;
+}
+#gnb>li:nth-child(1)
+#gnb>li:nth-child(2),#gnb>li:nth-child(3){width:10%;}
+#gnb>li:nth-child(5){margin:0;}
+nav>ul{width:85%;}
+
+#gnb::after{
+    content:'';
+    width:0; height:0;
+    display:block;
+    clear:both;
+    visibility:hidden;
+}
+#gnb>li{
+    float:left ;
+    width:15%; height:93px;
+    text-align:center;
+    box-sizing:border-box;
+    margin-right:9%;
+    overflow:hidden;
+}
+#gnb>li:nth-child(1){margin-left:10%;}
+#gnb>li:nth-child(4){display:none;}
+#gnb>li:nth-child(6){display:none;}
+#gnb>li:nth-child(7){display:none;}
+#gnb>li:nth-child(8){display:none;}
+
+#gnb>li>a{
+    font-size:1.3rem;  
+    text-decoration: none; 
+    position:relative;
+    box-sizing: border-box;
+    display:block;
+    line-height:93px;
+    width:100%; height:93px;
+    font-weight:500;
+}
+#gnb li a::after{
+    content:"";
+    position:absolute;
+    left:50%; bottom:0%;
+    transform:translateX(-50%);
+    width:0;
+    height:4px;
+    background: linear-gradient(90deg, rgba(175,191,48,1) 0%, rgba(74,145,68,1) 50%, rgba(54,89,76,1) 100%);
+    transition: all .5s ease-out;
+}
+
+#gnb li a:hover::after{width:90%;}
+#gnb>li:nth-child(5) a:after{content:none;}
+#gnb>li:nth-child(5)>a{display:inline-block; width:15%; height:35%; margin-top:11%; margin-left:40%;}
+#gnb>li:nth-child(5)>a:last-child{margin-left:25%; margin-top:9%;}
+#gnb>li:nth-child(5){padding-top:15px; margin-left:8%;}
+#gnb>li:nth-child(5) img{width:100%; display:block;}
+#gnb>li:nth-child(5)>a:first-child>img{width:88%;}
+
+/* 푸터 */
+footer{background:#36594c; padding:30px 0;}
+#footer_sns li{width:50px;}
+#footer_sns img{width:100%;}
+#footer_under img{width:70%;}
+#footer_under{justify-content: space-between; align-items: center;}
+#footer_under li,#footer_under li a{color:#fff;}
+#footer_under p,#footer_under li{font-size:0.8vw;}
+
+
+
+
+
+
+
+
+@media all and (max-width:1024px){ /* 모바일 */
+    /* 헤더영역 */
+    header{position:relative; height:120px;}
+    #header{
+        position:fixed;
+        background:#fff;
+        width:100%; height:120px;
+        z-index:9999;
+        top:0;
+        border-bottom:2px solid #d3d3d3;
+    }
+    nav.flex{position:relative;}
+    nav.flex>h1 img{width:110px;}
+    #util{display:none;}
+    #logo{margin:30px auto 0;}
+    
+    /* 햄버거 버튼 */
+    #m_btn{
+        height:50px;
+        position:absolute;
+        right:30px;
+        top:9px;
+        cursor:pointer;
+        z-index: 9999;
+        margin-top:30px;
+    }
+    #m_btn>span{
+        width:45px; height:9px;
+        background:#36594C;
+        display:block;
+    }
+    #m_btn.active-1>span:nth-child(1){
+        -webkit-transform: translateY (20px) rotate (-45deg);
+        transform: translateY(18px) rotate(-45deg);
+    }
+    #m_btn>span:nth-child(2){margin:10px 0;}
+    #m_btn.active-1>span:nth-child(2){opacity: 0;}
+    #m_btn.active-1>span:nth-child(3){
+        -webkit-transform: translateY(-20px) rotate(45deg);
+        transform: translateY(-20px) rotate(45deg);
+    }
+
+    /* 모바일 gnb */
+    
+    #gnb,#m_btn{position:fixed;}
+    #gnb{
+        background:#9EB4A8;
+        right:0;
+        width:40%; height:100%; 
+        display:none;
+        z-index: 999;
+        padding-top:120px;
+    }
+    #gnb>li:nth-child(1){margin-left:0;}
+    #gnb li a:hover::after{width:0;}
+    #gnb>li:nth-child(2),#gnb>li:nth-child(3){width:100%;}
+    #gnb>li:nth-child(4), #gnb>li:nth-child(6),
+    #gnb>li:nth-child(7), #gnb>li:nth-child(8)
+    {display:block;}
+    #gnb>li:nth-child(5){display:none;}
+    #gnb>li>a{display:block; color:#fff; font-weight:600; line-height:0; margin-top:10px;}
+    #gnb>li>a>img{display:none;}
+    #gnb>li:nth-child(5)>a:first-child
+    {padding-top:15px; line-height:7px;}
+    #gnb>li:hover{background:#fff; border:none;}
+    #gnb>li:hover>a{color:#36594C;}
+    #gnb>li{
+        display:flex;
+        flex-flow: column;
+        width:100%;
+        height:70px;
+    }
+    #gnb>li>a{display:block; line-height:40px;}
+    #gnb>li>a>img{display:none;}
+    #gnb>li:nth-child(5)>a:first-child{padding-top:15px;}
+    #gnb>li:hover{background:#36594C;}
+    #gnb>li:hover>a{color:#fff;}
+
+    #gnb>li>a{
+        font-size:1.47777rem; 
+        height:80px; 
+        text-decoration: none; 
+        position:relative;
+        padding:6px 0;
+        box-sizing: border-box;
+    }
+
+    /* 푸터영역 */
+    footer{text-align:center;}
+    #footer_sns>ul,#footer_under{justify-content:center;}
+    #footer_under{flex-flow:column wrap;}
+    #footer_under img{margin:0 auto; display:block;}
+    #footer_under>ul:nth-child(2){margin:2% 0;}
+    #footer_under>ul:nth-child(5){text-align:center;}
+    #footer_under li:last-child{margin-top:20px;}
+}
+
+@media(max-width:375px){
+    #logo { margin: 30px 140px 0px;}
+    #gnb>li>a {font-size: 1.1rem;}
+    #m_btn{right:25px;}
+    #m_btn>span {
+        width: 35px;
+        height: 6px;
+        background: #36594C;
+        display: block;
+    }
+    #m_btn.active-1>span:nth-child(3) {
+        -webkit-transform: translateY(-20px) rotate(45deg);
+        transform: translateY(-14px) rotate(45deg);
+    }
+    #footer_sns{margin-bottom:10px;}
+    #footer_sns img {width: 75%;}
+    #footer_under img {width: 45%;}
+}

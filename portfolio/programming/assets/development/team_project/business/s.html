@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <title>약국찾기</title>
+    <link href="./css/s_style.css" rel="stylesheet" type="text/css" />
+    <link href="./css/common.css" rel="stylesheet" type="text/css" />
+
+</head>
+<body>
+    <header>
+        <div id="header">
+            <ul class="flex" id="util">
+                <li><a href="./l.html">로그인</a></li>
+                <li><a href="./l2-1.html">회원가입</a></li>
+                <li><a href="./s.html">제품판매약국 찾기</a></li>
+            </ul>
+            <nav class="flex"> 
+                <h1 id="logo">
+                    <a href="./h1_main.html">
+                        <img src="./img/icon/logo.png" alt="logo" />
+                    </a>
+                </h1>
+                <ul id="gnb">
+                    <li>
+                        <a href="./g1.html">브랜드 스토리</a>
+                    </li>
+                    <li>
+                        <a href="./g2.html">제품정보</a>
+                    </li>
+                    <li>
+                        <a href="./g3.html">상품구매</a>
+                    </li>
+                    <li>
+                        <a href="./m1.html">마이페이지</a>
+                    </li>
+                    <li>
+                        <a href="./m1.html"><img src="./img/icon/mypage.png" alt="mypage" /></a>
+                        <a href="./b-2.html"><img src="./img/icon/shoppingcart.png" alt="shoppingcart" /></a>
+                    </li>
+                    <li>
+                        <a href="./b-2.html">장바구니</a>
+                    </li>
+                    <li>
+                        <a href="./s.html">
+                            제품판매약국찾기
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./l.html">
+                            로그인/회원가입
+                        </a>
+                    </li>
+                </ul>
+                <div id="m_btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <div>
+        <div class="wrap">
+            <h1><strong>주변 판매약국</strong>을 찾아보세요</h1>
+                <div class="search">
+                    <select name="pharmacy" class="select">
+                        <option disabled selected>제품 선택</option>
+                        <option value="까스활명수큐액">까스활명수큐액</option>
+                        <option value="활명수액">활명수액</option>
+                        <option value="미인활명수액">미인활명수액</option>
+                        <option value="꼬마활명수액">꼬마활명수액</option>
+                        <option value="활명수-유액">활명수</option>
+                        <option value="까스活액">까스活액</option>
+                        <option value="미인活액">미인活액</option>
+                    </select>
+                    <select name="whole" class="whole">
+                        <option disabled selected>전체</option>
+                        <option value="강원">강원</option>
+                        <option value="경기">경기</option>
+                        <option value="경남">경남</option>
+                        <option value="경북">경북</option>
+                        <option value="광주">광주</option>
+                        <option value="대구">대구</option>
+                        <option value="대전">대전</option>
+                        <option value="부산">부산</option>
+                        <option value="서울">서울</option>
+                        <option value="세종">세종</option>
+                        <option value="울산">울산</option>
+                        <option value="인천">인천</option>
+                        <option value="전남">전남</option>
+                        <option value="전북">전북</option>
+                        <option value="제주">제주</option>
+                        <option value="충남">충남</option>
+                        <option value="충북">충북</option>
+                    </select>
+                    <select name="gangwon" class="gangwon">
+                        <option disabled selected>시/군/구</option>
+                        <option value="강릉시">강릉시</option>
+                        <option value="고성군">고성군</option>
+                        <option value="동해시">동해시</option>
+                        <option value="삼척시">삼척시</option>
+                        <option value="속초시">속초시</option>
+                        <option value="양구군">양구군</option>
+                        <option value="양양군">양양군</option>
+                        <option value="영월군">영월군</option>
+                        <option value="원주시">원주시</option>
+                        <option value="인제군">인제군</option>
+                        <option value="정선군">정선군</option>
+                        <option value="평창군">평창군</option>
+                        <option value="횡성군">횡성군</option>
+                    </select>
+                        <div class="area_width">
+                            <p class="area"><input type="text" name="area" placeholder="지역명을 입력하세요" /></p>
+                            <a href="#"><img src="./img/g2_img/search.png" alt="search"/></a>
+                        </div>
+                </div>     
+        </div>
+                <div class="location">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d101199.6471901529!2d126.84104381640627!3d37.56710199999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca39d794b55eb%3A0xcb9d866167aef9eb!2z64-Z7ZmU7JW97ZKIIOuzuOyCrA!5e0!3m2!1sko!2skr!4v1663911125675!5m2!1sko!2skr" style="border:0;" allowfullscreen="" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+    </div>
+    <footer>
+        <div>
+            <div id="footer_sns">
+                <ul class="flex">
+                    <li>
+                        <a href="#">
+                            <img src="./img/icon/f.png" alt="facebook" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./img/icon/u.png" alt="youtube" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./img/icon/in.png" alt="instagram" />
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="flex" id="footer_under">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <img src="./img/icon/ft_logo.png" alt="logo" />
+                        </a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                    <p>04552 서울특별시 중구 남대문로 9길 24 패스트파이브 타워 6~8층 &nbsp;&nbsp; 대표이사 : 유준하, 한종현</p>
+                    <p>Tel : 02-2021-9300 &nbsp;&nbsp; Mail : dogwha@dong-wha.co.kr &nbsp;&nbsp; 사업자등록번호 : 110-81-00102</p>
+                    </li>
+                </ul>
+                <ul>
+                    <li><a href="#">개인정보 취급 방침</a></li>
+                    <li>Copyright (c) DONG WHA PHARM. CO., LTD ALL Rights Reserved. </li>
+                    <li><a href="./manager_page/e_main.html">관리자 페이지</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="./js/common.js"></script>
+</body>
+</html>

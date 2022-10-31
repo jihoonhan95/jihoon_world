@@ -1,0 +1,314 @@
+@charset "utf-8";
+@import "reset.css";
+@import "common.css";
+.wrap{width:1440px; margin:150px auto 130px;}
+form{width:100%;}
+h2{
+    display: none;
+    visibility: hidden;
+    width: 0; height: 0;
+    overflow: hidden;
+    text-indent: -9999px;
+}
+
+/*위쪽 현재진행상태표시 영역*/
+.wrap>ul{font-size:0; text-align: center;}
+div.wrap{margin-top:0; margin-bottom:200px;}
+.wrap>ul>li{
+    display:inline-block;
+    vertical-align: middle;
+    width:100px;
+    height:100px;
+    border:1px solid #36594c;
+    background:#36594c;
+    border-radius:50%;
+    text-align:center;
+    padding-top:20px;
+    box-sizing:border-box;
+    color:#fff;
+    line-height:1.3em;
+    font-weight:700;
+    font-size:20px;
+}
+.wrap>ul>li:nth-child(even){
+    background:url('../img/b_img/icon01.gif') no-repeat center/30px;
+    border:none;
+}
+.wrap>ul>li:nth-child(3),
+.wrap>ul>li:nth-child(5){
+    background:none;
+    color:#666;
+    border-color:#888;
+}
+.wrap>ul::after{
+	content:'';
+	width:0; height:0;
+	display:block;
+	clear:both;
+	visibility:hidden;
+}
+.clear::after{
+	content:'';
+	width:0; height:0;
+	display:block;
+	clear:both;
+	visibility:hidden;
+}
+
+/*왼쪽영역*/
+.wrap{width:1440px;}
+
+.orderform{display:flex;}
+.orderform>section:first-of-type{width:65%;}
+.orderform>section:last-of-type{width:35%; margin-left:5%;}
+.choice{display: flex; margin-bottom:10px;}
+.choice>a{margin-right: 10px;}
+#basket{width:100%;}
+#basket>div:first-of-type{border-bottom:0;}
+
+.row{
+    border-bottom: 1px solid #ddd;
+    border-top: 1px solid #ddd;
+    align-items: center;
+    height: 280px;
+    padding-top:30px;
+    box-sizing:border-box;
+}
+.subdiv{position:relative; width:100%; display:block;}
+.price0,.price{height:10%;}
+.price1,.price2{height:90%;}
+
+.check{height:80%; width:20%;}
+#chk1,#chk2{display:none;}
+.chkBox{
+    display:block;
+    width:20px;
+    height:20px;
+    border:1px solid #666;
+    box-sizing:border-box;
+    position:absolute;
+    top:0;
+    cursor:pointer;
+}
+#chk1:checked + .chkBox,
+#chk2:checked + .chkBox{
+    background:url('../img/b_img/check.png') no-repeat center center/90% #36594c;
+}
+
+.pname1,.pname2{
+    position: absolute;
+    left: 37%;
+    top:12%;
+    font-size: 1.7rem;
+    color:#333;
+    font-weight:600;
+}
+.pname2{left:37%;}
+
+.delete1,.delete2{
+    position: absolute;
+    top:0;
+    right:1%;
+    text-indent:-999999999999px;
+    display:block;
+    width:2.5%;
+    height:80%;
+    background:url('../img/b_img/icon02.gif') no-repeat center/100% ;
+}
+
+.price1>.img,.price2>.img{
+    width:25%;
+    height:85%;
+    position:absolute;
+    top:0;
+}
+.img>img{width:100%; height:100%;}
+
+.delivery1{
+    font-size: 0.8rem; color: #666;
+    position:absolute;
+    left:37%;
+    bottom:45%;
+}
+
+.num{
+    width:13.2%;
+    height:13%;
+    position:absolute;
+    left:37%;
+    bottom:25%;
+}
+.updown{width:100%; height:100%; position:relative;}
+.updown>input{
+    border:0; 
+    background:#fff; 
+    text-align:center; 
+    color:#333;
+    display:inline-block;
+    width:50%;
+    height:100%;
+    position:absolute;
+    left:25%;
+    border:1px solid #eee;
+    box-sizing:border-box;
+}
+.updown>span{
+    display:inline-block;
+    width: 25%;
+    height:100%;
+    background: #eee;
+    cursor: pointer;
+    position:absolute;
+    top:0;
+}
+.updown>span:last-of-type{right:0;}
+#mi01,#plus01,
+#mi02,#plus02{
+    display:block;
+    width:100%; height:70%;
+    padding:15% 0;
+    text-align: center;
+    color:#333;
+}
+
+.sum{
+    font-size: 2rem;
+    position: absolute;
+    color:#333;
+    right:1%;
+    bottom:25%;
+}
+
+/*오른쪽 결제하기 창*/
+#sum_p_price2{
+    display: none;
+}
+.right{
+    width:100%;
+    text-align: left;
+    font-size: 1.6rem;
+    color: #333;
+    border: 1px solid #ddd;
+    box-sizing:border-box;
+    padding:8% 11%;
+}
+.right>.sumcount{margin:0;}
+
+
+.right1,.right2,.right3{margin-top: 20px; position:relative;}
+.right1{margin-top:40px;}
+.right1>p,.right2>p,.right3>p{
+    position:absolute; 
+    right:0;
+    font-size:1.2rem;
+}
+.free{font-size:1.4rem;}
+.sumcount{
+    font-size: 1.1rem;
+    color: #666;
+    text-align: left;
+    margin:0;
+}
+
+hr{
+    width:100%;
+    background: #ddd;
+    height: 2px;
+    border: 0;
+    display: inline-block;
+}
+#goorder{
+    background: #36594c;
+    width: 100%;
+    height: 70px;
+    text-align: center;
+    cursor: pointer;
+    margin-top:20px;
+}
+
+#goorder>a{
+    color: #fff;
+    font-size:1.5rem;
+    display:block;
+    width: 100%;
+    height: 70px;
+    line-height: 70px;
+    
+}
+
+#sum_p_price1{
+    color: #000;
+    font-weight: bold;
+    padding-bottom:40px;
+}
+#sum_p_num{width: 50%;}
+
+
+@media all and (max-width:1024px){
+    .wrap{width:100%; margin-top:13vw; margin-bottom:10vw;}
+    .orderform{display:block;}
+    .orderform>section:first-of-type,
+    .orderform>section:last-of-type{width:70%; margin:0 auto;}
+    .orderform>section:last-of-type{margin-top:30px;}
+    .choice>a{font-size:1.3vw;}
+    .row{height:25vw; padding-top:3vw;}
+
+    
+
+    .num{width:11vw; height:2.5vw;}
+
+    .delivery1{font-size:1.1vw;}
+    #mi01,#plus01,
+    #mi02,#plus02{
+        width:100%;
+        font-size:1.8vw;
+    }
+    .p_num{font-size:1.5vw;}
+
+    .pname1,.pname2{font-size:2.4vw;}
+    .sum{font-size:3vw;}
+    .right{height:30vw;}
+
+    .right1,.right2,.right3{margin-top:2vw;}
+    .right1{margin-top:4vw;}
+    #sum_p_num{font-size:1.5vw;}
+    .right1>p,.right2>p,.right3>p{font-size:1.9vw;}
+    #sum_p_price,#sum_p_price1{font-size:2.5vw;}
+    .free{font-size:2vw;}
+    
+    #goorder>a{display:none;}
+    #goorder{margin-top:2vw; height:6.5vw;}
+    #sum_p_price2{
+        display:block;
+        font-size:2.3vw;
+        color:#fff;
+        width:100%;
+        height:100%;
+        text-align:center;
+        line-height:6.5vw;
+    }
+    
+
+    .chkBox{width:1.6vw; height:1.6vw;}
+}
+
+
+@media all and (max-width:768px){
+    .wrap>ul>li {
+        width: 13vw;
+        height: 13vw;
+        padding-top: 4.9vw;
+        font-size: 2.5vw;
+        padding-top:3%;
+    }
+    .wrap>ul>li:nth-child(even) {
+        width: 4vw;
+        background-size: 100% auto;
+        margin: 0 4vw;
+    }
+    .wrap>div>#shoppingCart>p{
+        width:5vw;
+        height:5vw;
+        line-height:5vw;
+    }
+}

@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <title>상품등록</title>
+    <link href="./css/p1_style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <header>
+        <div class="wrap header_flex">
+            <div class="header_flex logo">
+                <h1>
+                    <a href="./e_main.html">
+                        <img src="./img/icon/logo.png" alt="logo" />
+                    </a>
+                </h1>
+            </div>
+            <div>
+                <div class="header_flex header_top">
+                    <ul class="header_flex">
+                        <li>
+                            <a href="e_main.html">
+                                <img src="./img/icon/menu.png" alt="menu" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./img/icon/myp.png" alt="mypage" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">접속통계</a>
+                        </li>
+                        <li>
+                            <a href="#">1:1 문의</a>
+                        </li>
+                        <li>
+                            <a href="#">고객센터</a>
+                        </li>
+                        <li>
+                            <a href="#">HELP</a>
+                        </li>
+                    </ul>
+                    <div><a href="../h1_main.html">활명수 페이지 바로가기</a></div>
+                </div>
+                <div class="header_under">
+                    <ul class="header_flex gnb">
+                        <li>
+                            <a href="p.html">상품관리</a>
+                        </li>
+                        <li>
+                            <a href="#">주문관리</a>
+                        </li>
+                        <li>
+                            <a href="c.html">회원관리</a>
+                        </li>
+                        <li>
+                            <a href="#">디자인관리</a>
+                        </li>
+                        <li>
+                            <a href="#">모바일관리</a>
+                        </li>
+                        <li>
+                            <a href="#">마케팅</a>
+                        </li>
+                        <li>
+                            <a href="#">앱스토어</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="wrap flex">
+        <aside class="p_aside">
+            <ul>
+                <li class="menu">
+                    <a href="p.html">상품관리</a>
+                </li>
+                <li class="menu">
+                    <a>상품등록</a>
+                    <ul class="hide">
+                        <li><a href="p.html">상품관리</a></li>
+                        <li><a href="#">상품등록</a></li>
+                    </ul>
+                </li>
+                <li class="menu">
+                    <a>재고관리</a>
+                    <ul class="hide">
+                        <li><a href="#">상품재고 관리</a></li>
+                        <li><a href="#">품절상품 관리</a></li>
+                    </ul>
+                </li>
+                <li class="menu">
+                    <a>이벤트관리</a>
+                    <ul class="hide">
+                        <li><a href="#">진행중인 이벤트</a></li>
+                        <li><a href="#">진행예정 이벤트</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </aside>
+
+        <form id="form" method="post" >
+            <table id="table">
+                <caption>상품등록</caption>
+                <tr>
+                    <th colspan="2" class="title">진열상태</th>
+                </tr>
+                <tr>
+                    <th>진열상태</th>
+                    <td>
+                        <input type="radio" name="exhibition" id="exhibition1">
+                        <label for="exhibition1">진열함</label>
+                        <input type="radio" name="exhibition" id="exhibition2">
+                        <label for="exhibition2">진열안함</label>
+                    </td>
+                </tr>
+                <tr>
+                    <th>판매상태</th>
+                    <td>
+                        <input type="radio" name="sale" id="sale1">
+                        <label for="sale1">판매중</label>
+                        <input type="radio" name="sale" id="sale2">
+                        <label for="sale2">판매중지</label>
+                    </td>
+                </tr>
+                <tr>
+                    <th colspan="2" class="title">상품필수 정보</th>
+                </tr>
+                <tr>
+                    <th>상품명</th>
+                    <td>
+                        <input type="text" >
+                    </td>
+                </tr>
+                <tr>
+                    <th>상품명(관리용)</th>
+                    <td>
+                        <input type="text" >
+                    </td>
+                </tr>
+                <tr>
+                    <th>모델명</th>
+                    <td>
+                        <input type="text" >
+                    </td>
+                </tr>
+                <tr>
+                    <th>상품코드</th>
+                    <td>
+                        <input type="text" >
+                    </td>
+                </tr>
+                <tr>
+                    <th>상품요약설명</th>
+                    <td>
+                        <input type="text">
+                    </td>
+                </tr>
+                <tr>
+                    <th>상품상세설명</th>
+                    <td>
+                        <textarea></textarea>
+                    </td>
+                </tr>
+                <tr class="search">
+                    <th>검색어 설정</th>
+                    <td>
+                        <input type="text" >
+                    </td>
+                </tr>
+                <tr>
+                    <th colspan="2" class="title">이미지 등록</th>
+                </tr>
+                <tr>
+                    <th class="img">대표이미지</th>
+                    <td>
+                        <input type="file" id="image1" accept="image/*" onchange="setThumbnail1(event);" multiple>
+                        <div id="image_container1"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <th class="img">상세이미지</th>
+                    <td>
+                        <input type="file" id="image2" accept="image/*" onchange="setThumbnail2(event);" multiple>
+                        <div id="image_container2"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <th colspan="2" class="title">판매정보</th>
+                </tr>
+                <tr>
+                    <th>정가</th>
+                    <td>
+                        <input type="number" >원
+                    </td>
+                </tr>
+                <tr>
+                    <th>판매가</th>
+                    <td>
+                        <input type="number" >원
+                    </td>
+                </tr>
+                <tr>
+                    <th>배송비</th>
+                    <td>
+                        <input type="radio" name="parcel" id="parcel1">
+                        <label for="parcel1">무료</label>
+                        <input type="radio" name="parcel" id="parcel2">
+                        <label for="parcel2">5,000</label>
+                    </td>
+                </tr>
+                <tr>
+                    <th>재고수량</th>
+                    <td>
+                        <input type="number" >개
+                    </td>
+                </tr>
+            </table>
+            <div>
+            <button>상품등록</button>
+            <button>취소</button>
+            </div>
+        </form>
+    </section>
+    <!-- aside javascript -->
+    <script src="./js/p.js"></script>
+    <script>
+        /*스크립트*/
+        $("menu a").click(function(evt){
+            $.scrollTo(this.hash,3000);
+            evt.preventDefault();
+        });
+    </script>
+
+</body>
+</html>

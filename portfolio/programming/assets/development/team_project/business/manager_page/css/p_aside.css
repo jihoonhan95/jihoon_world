@@ -1,0 +1,46 @@
+@charset  "utf-8";
+
+aside{width:15%;}
+.p_aside{width:14%;}
+aside>ul{
+    font-size:1.0rem;
+    font-weight:500;
+}
+aside>ul>li:first-child{
+    background:#9EB4A8;
+    border:none;
+    color:#fff;
+}
+aside>ul>li{
+    background:#efefef;
+    border-top:1px solid #b1b1b1;
+    padding:8%;
+    
+}
+
+aside>ul>li>ul{
+    border-top:1px solid #d6d3d3;
+    padding-left:15%;
+    margin-top:8%;
+    font-size:0.9rem;
+}
+aside>ul>li>ul>li>a{
+    color:#c01313;
+    display:block;
+}
+
+aside>ul>li>ul>li{padding:5% 0;}
+
+
+.menu a{cursor:pointer;}
+.menu .hide{display:none;}
+
+/*다운*/
+.align{margin-right:95}
+.align aside>ul>li:first-child>a{color:#fff;}
+.menu>ul>li a{
+    color:#8b8b8b; 
+    font-size:0.8rem;
+    padding:10px 0;
+}
+.menu>ul>li a:hover{color:#375949;}

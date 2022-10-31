@@ -1,0 +1,34 @@
+@charset  "utf-8";
+@import "p_aside.css";
+@import "reset.css";
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.5/dist/web/static/pretendard.css");
+
+*{box-sizing: border-box;color:#5c5c5c;}
+
+.align{display:flex;}
+
+.t_wrap{width:70%;margin: 4% 3% 9% 3%;}
+.t_wrap table {
+    width:100%;
+    height:150px;
+    border: 1px solid #ddd;
+    border-collapse: collapse;
+    text-align: center;
+}
+.t_wrap th, .t_wrap td {border: 1px solid #ddd; vertical-align: middle;}
+.section1{margin-bottom: 70px;}
+.section1 th,
+.section1 td{width:25%;}
+.section2{margin-bottom:15px;}
+.section2 table thead tr th:nth-child(4){width:35%;}
+.t_wrap h2{
+    font-weight: 900; 
+    color:#666; 
+    margin-bottom:2%; 
+    font-size:17px;
+}
+.section1 strong{font-size:25px;}
+.t_wrap th{height:50px; color:#7f7f7f;font-weight: bold;}
+.t_wrap td{height:100px; color:#666;font-weight: bold;}
+
+.text p{color:#aca9a9; font-size:13px;margin-bottom:5px;}

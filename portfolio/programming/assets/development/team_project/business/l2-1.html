@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <title>활명수_회원가입</title>
+    <link href="./css/l2-1.css" rel="stylesheet" type="text/css" />
+    <script>
+        function checkz(){
+            var getCheck= RegExp(/^[a-zA-Z0-9]{4,12}$/);
+            var getName= RegExp(/^[가-힣]+$/);
+
+            /*아이디 공백 확인*/
+            if($("#id").val()==""){
+                alert("아이디를 입력해주세요");
+                $("#id").focus();
+                return false;
+            }
+
+            /*비밀번호 공백 확인*/
+            if($("#password").val() == ""){
+                alert("비밀번호를 입력해주세요");
+                $("#password").focus();
+                return false;
+                }
+
+            if(!getCheck.test($("#password").val())) {
+                alert("형식에 맞춰서 비밀번호를 입력해주세요 ");
+                $("#password").val("");
+                $("#password").focus();
+                return false;
+                }
+
+            /*비밀번호 같은지*/
+            if($("#password").val() != ($("#password_chk").val())){ 
+                alert("비밀번호가 일치하지 않습니다.");
+                $("#password").val("");
+                $("#password_chk").val("");
+                $("#password").focus();
+                return false;
+                }
+            if($("#password_chk").val() == ""){
+            alert("비밀번호 확인을 입력해주세요");
+            $("#password_chk").focus();
+            return false;
+            }
+
+            /*이름 공백 확인*/
+            if($("#name").val() == ""){
+            alert("이름을 입력해주세요");
+            $("#name").focus();
+            return false;
+            }
+
+            /*이름 제대로 썼는지 확인*/
+            if (!getName.test($("#name").val())) {
+                alert("이름을 바르게 써주세요");
+                $("#name").val("");
+                $("#name").focus();
+                return false;
+            }
+
+            /*번호 공백 확인*/
+            if($("#tel").val() == ""){
+            alert("휴대폰 번호를 입력해주세요");
+            $("#tel").focus();
+            return false;
+            }
+            
+            /*인증번호 공백 확인*/
+            if($("#number").val() == ""){
+            alert("인증번호를 입력해주세요");
+            $("#number").focus();
+            return false;
+            }
+
+            /*약관동의 체크 했는지*/
+            if($("input:checkbox[id='essential1']").is(":checked") != true){
+            alert('필수 약관동의에 체크해 주세요');
+            return;
+            }
+            if($("input:checkbox[id='essential2']").is(":checked") != true){
+            alert('필수 약관동의에 체크해 주세요');
+            return;
+            }
+            if($("input:checkbox[id='essential3']").is(":checked") != true){
+            alert('필수 약관동의에 체크해 주세요');
+            return;
+            }
+            else{
+                location.href="./l2-2.html";
+            }
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <div id="header">
+            <ul class="flex" id="util">
+                <li><a href="./l.html">로그인</a></li>
+                <li><a href="./l2-1.html">회원가입</a></li>
+                <li><a href="./s.html">제품판매약국 찾기</a></li>
+            </ul>
+            <nav class="flex"> 
+                <h1 id="logo">
+                    <a href="./h1_main.html">
+                        <img src="./img/icon/logo.png" alt="logo" />
+                    </a>
+                </h1>
+                <ul id="gnb">
+                    <li>
+                        <a href="./g1.html">브랜드 스토리</a>
+                    </li>
+                    <li>
+                        <a href="./g2.html">제품정보</a>
+                    </li>
+                    <li>
+                        <a href="./g3.html">상품구매</a>
+                    </li>
+                    <li>
+                        <a href="./m1.html">마이페이지</a>
+                    </li>
+                    <li>
+                        <a href="./m1.html"><img src="./img/icon/mypage.png" alt="mypage" /></a>
+                        <a href="./b-2.html"><img src="./img/icon/shoppingcart.png" alt="shoppingcart" /></a>
+                    </li>
+                    <li>
+                        <a href="./b-2.html">장바구니</a>
+                    </li>
+                    <li>
+                        <a href="./s.html">
+                            제품판매약국찾기
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./l.html">
+                            로그인/회원가입
+                        </a>
+                    </li>
+                </ul>
+                <div id="m_btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <div class="wrap">
+        <section class="section1">
+            <h1>JOIN US</h1>
+            <div class="sign">
+                <div class="id">
+                    <input type="text" id="id" placeholder="아이디" name="user_id" />
+                </div>
+                <div class="password">
+                    <input type="password" id="password" placeholder=" 비밀번호 (4~12자리의 영문 대소문자와 숫자로만 입력)" name="user_psw" />
+
+                </div>
+                <div class="password">
+                    <input type="password" id="password_chk" placeholder=" 비밀번호 확인" name="user_psw" />
+                </div>
+                <div class="name">
+                    <input type="text" id="name" placeholder=" 이름" name="user_name" />
+                </div>
+                <div class="tel">
+                    <h6>휴대폰번호</h6>
+                    <input type="tel" id="tel" placeholder="" name="user_tel" />
+                    <button class="btn">전송</button>
+                </div>
+                <div class="sms">
+                    <h6>SMS 인증번호</h6>
+                    <input type="number" id="number" placeholder="" name="user_sns" />
+                    <button class="btn">확인</button>
+                </div>
+                <div class="check">
+                    <h6>약관동의</h6>
+                    <div>
+                        <p>
+                            <input type="checkbox" id="allChk" class="checkbox">
+                            <label for="allChk">전체 약관에 모두 동의 합니다.</label>
+                        </p>
+                    </div>
+                    <div>
+                        <p>
+                            <input type="checkbox" id="essential1" class="checkbox">
+                            <label for="essential1">이용약관 <span class="color">(필수)</span></label>
+                        </p>
+                        <p>
+                            <input type="checkbox" id="essential2" class="checkbox">
+                            <label for="essential2">개인정보 수집 및 이용 안내 <span class="color">(필수)</span></label>
+                        </p>
+                        <p>
+                            <input type="checkbox" id="essential3" class="checkbox">
+                            <label for="essential3">만 14세 이상입니다. <span class="color">(필수)</span></label>
+                        </p>
+                        <p>
+                            <input type="checkbox" id="market" class="checkbox">
+                            <label for="market">마케팅 수신동의 <span class="margin">(선택)</span></label>
+                            <input type="checkbox" id="email" class="size checkbox">
+                            <label for="email">이메일</label>
+                            <input type="checkbox" id="sns" class="size checkbox">
+                            <label for="sns">SMS,카카오톡</label>
+                        </p>
+                    </div>
+                    <div class="clear"><button type="button" onClick="checkz()">가입완료</button></div>
+                    <div class="reset"><button type="button" onClick="location.href='./h1_main.html';">돌아가기</button></div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+
+    <footer>
+        <div>
+            <div id="footer_sns">
+                <ul class="flex">
+                    <li>
+                        <a href="#">
+                            <img src="./img/icon/f.png" alt="facebook" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./img/icon/u.png" alt="youtube" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./img/icon/in.png" alt="instagram" />
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="flex" id="footer_under">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <img src="./img/icon/ft_logo.png" alt="logo" />
+                        </a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                    <p>04552 서울특별시 중구 남대문로 9길 24 패스트파이브 타워 6~8층 &nbsp;&nbsp; 대표이사 : 유준하, 한종현</p>
+                    <p>Tel : 02-2021-9300 &nbsp;&nbsp; Mail : dogwha@dong-wha.co.kr &nbsp;&nbsp; 사업자등록번호 : 110-81-00102</p>
+                    </li>
+                </ul>
+                <ul>
+                    <li><a href="#">개인정보 취급 방침</a></li>
+                    <li>Copyright (c) DONG WHA PHARM. CO., LTD ALL Rights Reserved. </li>
+                    <li><a href="./manager_page/e_main.html">관리자 페이지</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+
+    <script>
+        $("#allChk").change(function(){
+    var isChk = $(this).is(":checked");
+    $(".checkbox").prop("checked",isChk);
+    });
+    </script>
+    <script src="./js/common.js"></script>
+</body>
+</html>

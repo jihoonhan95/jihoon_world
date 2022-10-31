@@ -1,0 +1,44 @@
+@charset  "utf-8";
+@import "reset.css";
+.wrap{max-width:1440px; margin:0 auto;}
+.section01{text-align:center; max-width:1440px;}
+.section01>h3{
+    font-size:2rem;
+    font-weight:700;
+    margin-top:50px;
+    color:#222;
+}
+.section01>p{margin:20px 0 60px 0; color:#222;}
+.section01>div{display:flex; justify-content:center;}
+.section01>div>a{
+    display:block;
+    width:130px; height:40px;
+    line-height:40px;
+    border-radius:30px;
+    font-size:1.6rem;
+    font-weight:500;
+    color:#222;
+}
+.section01>div>a:nth-child(2){margin:0 50px;}
+
+/*타이틀 영역*/
+#title{
+    max-width:1440px; height:50px;
+    text-align:left;
+    border-bottom:4px solid #37594B;
+    margin:50px auto 0;
+}
+#title>h4{
+    font-size:1.6rem;
+    font-weight:600;
+    line-height:50px;
+    color:#222;
+}
+
+
+
+
+@media all and (max-width:1024px){
+    .section01>div>a:nth-child(2){margin:0;}
+    
+}

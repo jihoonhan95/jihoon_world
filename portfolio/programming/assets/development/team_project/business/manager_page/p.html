@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <title>상품관리</title>
+    <link href="./css/p_style.css" rel="stylesheet" type="text/css" />
+    
+</head>
+<body>
+    <header>
+        <div class="wrap header_flex">
+            <div class="header_flex logo">
+                <h1>
+                    <a href="./e_main.html">
+                        <img src="./img/icon/logo.png" alt="logo" />
+                    </a>
+                </h1>
+            </div>
+            <div>
+                <div class="header_flex header_top">
+                    <ul class="header_flex">
+                        <li>
+                            <a href="e_main.html">
+                                <img src="./img/icon/menu.png" alt="menu" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./img/icon/myp.png" alt="mypage" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">접속통계</a>
+                        </li>
+                        <li>
+                            <a href="#">1:1 문의</a>
+                        </li>
+                        <li>
+                            <a href="#">고객센터</a>
+                        </li>
+                        <li>
+                            <a href="#">HELP</a>
+                        </li>
+                    </ul>
+                    <div><a href="../h1_main.html">활명수 페이지 바로가기</a></div>
+                </div>
+                <div class="header_under">
+                    <ul class="header_flex gnb">
+                        <li>
+                            <a href="p.html">상품관리</a>
+                        </li>
+                        <li>
+                            <a href="#">주문관리</a>
+                        </li>
+                        <li>
+                            <a href="c.html">회원관리</a>
+                        </li>
+                        <li>
+                            <a href="#">디자인관리</a>
+                        </li>
+                        <li>
+                            <a href="#">모바일관리</a>
+                        </li>
+                        <li>
+                            <a href="#">마케팅</a>
+                        </li>
+                        <li>
+                            <a href="#">앱스토어</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <section class="wrap flex">
+        <aside class="p_aside">
+            <ul>
+                <li class="menu">
+                    <a href="p.html">상품관리</a>
+                </li>
+                <li class="menu">
+                    <a>상품등록</a>
+                    <ul class="hide">
+                        <li><a href="p.html">상품관리</a></li>
+                        <li><a href="p1.html">상품등록</a></li>
+                    </ul>
+                </li>
+                <li class="menu">
+                    <a>재고관리</a>
+                    <ul class="hide">
+                        <li><a href="#">상품재고 관리</a></li>
+                        <li><a href="#">품절상품 관리</a></li>
+                    </ul>
+                </li>
+                <li class="menu">
+                    <a>이벤트관리</a>
+                    <ul class="hide">
+                        <li><a href="#">진행중인 이벤트</a></li>
+                        <li><a href="#">진행예정 이벤트</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </aside>
+        <article id="article">
+            <table>
+                <caption>상품현황</caption>
+                <tr>
+                    <th height="50">전체등록 상품</th>
+                    <th>판매중 상품</th>
+                    <th>품절 상품</th>
+                    <th>삭제 상품</th>
+                </tr>
+                <tr>
+                    <td height="50">0개</td>
+                    <td>0개</td>
+                    <td>0개</td>
+                    <td>0개</td>
+                </tr>
+            </table>
+            <table>
+                <caption>상품 재고 현황</caption>
+                <tr>
+                    <th height="50">상품명</th>
+                    <th>총 재고량</th>
+                    <th>품목명</th>
+                    <th>재고수량</th>
+                    <th>안전재고</th>
+                    <th>판매상태</th>
+                    <th>총 누적 판매량</th>
+                </tr>
+                <tr>
+                    <td height="50">
+                        <img src="./img/p_images/bottle1.png" alt="bottle" />
+                        <div>까스활액</div>
+                    </td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="./img/p_images/bottle2.png" alt="bottle" />
+                        <div>미인활액</div>
+                    </td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                </tr>
+            </table>
+            <div class="background flex">
+                <div class="flex">
+                    <div>
+                        <img src="./img/p_images/sale.png" alt="sale" />    
+                    </div>
+                    <div>
+                        <p>할인 상품 관리</p>
+                        <p>할인 상품들을 관리 할 수 있고 등록된<br>할인정보 및 내용을 수정 할 수 있습니다.</p>
+                    </div>
+                </div>
+                <div class="flex">
+                    <div>
+                        <img src="./img/p_images/set.png" alt="set" />    
+                    </div>
+                    <div>
+                        <p>세트 상품 관리</p>
+                        <p>세트 상품들을 관리 할 수 있고<br>
+                            세트로 만들어 놓은 상품을 수정 할 수 있습니다.</p>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </section>
+    <script src="./js/p.js"></script>
+</body>
+</html>

@@ -1,0 +1,95 @@
+@charset  "utf-8";
+@import "reset.css";
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.5/dist/web/static/pretendard.css");
+
+/*PC버전*/
+.wrap{
+    max-width:1440px; 
+    margin:0 auto;
+    padding-top:5%;
+    color:#444;
+    text-align: center;
+
+}
+
+.wrap h1{font-size:2.06667vw; font-weight: bold; color:#595959; letter-spacing: 6px;}
+.wrap h1 strong{font-size:2.56667vw; font-weight: bold; color:#37594b;}
+.search{margin:30px 0;}
+.select{
+    width:200px; 
+    height:35px;
+    background-size: 25px;
+    padding:5px 30px 5px 15px;
+    border-radius: 4px;
+    border:0;
+    background-color: #f3f3f3;
+    color:#8b8a8a;
+}
+
+.select option {
+    padding: 3px 0;
+  }
+
+.whole{
+    width:200px; 
+    height:35px;
+    padding:5px 30px 5px 15px;
+    border-radius: 4px;
+    border:0;
+    background: #f3f3f3;
+    color:#8b8a8a;
+}
+.gangwon{ 
+    width:200px; 
+    height:35px;
+    color:#8b8a8a;
+    padding:5px 30px 5px 15px;
+    border-radius: 4px;
+    border:0;
+    background: #f3f3f3;
+}
+.area_width{display: inline-block;}
+.area{
+    display: inline-block;
+    height:35px;
+    padding:5px 0;
+}
+.area input{
+    width:400px; height:35px; 
+    border:0;
+    border-radius: 4px;
+    background: #f3f3f3;
+    padding-left:20px;
+    color:#8b8a8a;
+}
+.location{margin:60px 0;}
+.location iframe{width:100%; height:450px;}
+
+  /* 모바일 버전 (1024px) */
+  @media all and (max-width:1024px){
+    .wrap{width:100%; margin-top:20px;}
+
+    .wrap h1{font-size:3.96667vw;}
+    .wrap h1 strong{font-size:4.96667vw;}
+  
+    .width{width: 100%;}
+    .select,
+    .whole{width:45%;}
+    .gangwon{width: 90%; margin:10px 0;}
+    .location{margin:40px 0 60px 0;}
+
+    .area{display: block;}
+    .area_width{ 
+        position: relative;
+        display:block;
+        padding-right: 45px;
+        width: 90%;
+        margin: 0 auto;
+        box-sizing: border-box;
+    }
+    .area_width a{position:absolute; right:0;top:0; display:block;}
+    .area input{width:100%; padding-left:0; text-indent: 20px;}
+
+
+
+}

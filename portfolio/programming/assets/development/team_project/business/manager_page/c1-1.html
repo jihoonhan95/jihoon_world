@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>회원정보조회</title>
+    <link href="./css/c1-1_style.css" rel="stylesheet" type="text/css" />
+    <link href="./css/manager_header.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="./js/jQueryUI/css/jquery-ui.css">
+    <script src="./js/jQueryUI/js/jquery.js"></script>
+    <script src="./js/jQueryUI/js/jquery-ui.js"></script>
+    <script src="./js/jQueryUI/js/jquery-ui.min.js"></script> 
+    <script src="./js/c1-1.js"></script> 
+    <script src="./js/p.js"></script> 
+</head>
+<body>
+    <header>
+        <div class="wrap header_flex">
+            <div class="header_flex logo">
+                <h1>
+                    <a href="./e_main.html">
+                        <img src="./img/icon/logo.png" alt="logo" />
+                    </a>
+                </h1>
+            </div>
+            <div>
+                <div class="header_flex header_top">
+                    <ul class="header_flex">
+                        <li>
+                            <a href="e_main.html">
+                                <img src="./img/icon/menu.png" alt="menu" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./img/icon/myp.png" alt="mypage" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">접속통계</a>
+                        </li>
+                        <li>
+                            <a href="#">1:1 문의</a>
+                        </li>
+                        <li>
+                            <a href="#">고객센터</a>
+                        </li>
+                        <li>
+                            <a href="#">HELP</a>
+                        </li>
+                    </ul>
+                    <div><a href="../h1_main.html">활명수 페이지 바로가기</a></div>
+                </div>
+                <div class="header_under">
+                    <ul class="header_flex gnb">
+                        <li>
+                            <a href="p.html">상품관리</a>
+                        </li>
+                        <li>
+                            <a href="#">주문관리</a>
+                        </li>
+                        <li>
+                            <a href="c.html">회원관리</a>
+                        </li>
+                        <li>
+                            <a href="#">디자인관리</a>
+                        </li>
+                        <li>
+                            <a href="#">모바일관리</a>
+                        </li>
+                        <li>
+                            <a href="#">마케팅</a>
+                        </li>
+                        <li>
+                            <a href="#">앱스토어</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="wrap align">
+        <aside>
+            <ul>
+                <li class="menu">
+                    <a>회원관리</a>
+                </li>
+                <li class="menu">
+                    <a>회원관리</a>
+                        <ul class="hide">
+                            <li><a href="c.html">회원관리</a></li>
+                            <li><a href="c1-1.html">회원정보 조회</a></li>
+                            <li><a href="#">회원가입/탈퇴관리</a></li>
+                        </ul>
+                </li>
+                <li class="menu">
+                    <a href="#">알림설정</a>
+                        <ul class="hide">
+                            <li><a href="#">상품재고 관리</a></li>
+                            <li><a href="#">품절상품 관리</a></li>
+                        </ul>
+                </li>
+            </ul>
+        </aside>
+        <div class="t_wrap">
+            <div class="section1">
+                <h2>회원정보조회</h2>
+                <table>
+                    <tr>
+                        <th>회원정보</th>
+                        <td>
+                            <input type="text" class="member">
+                            <select name="id" class="select">
+                                <option disabled selected>@ email</option>
+                                <option value="직접입력하기">직접입력하기</option>
+                                <option value="@naver.com">@naver.com</option>
+                                <option value="@hanmail.com">@hanmail.com</option>
+                                <option value="@gmail.com">@gmail.com</option>
+                            </select>  
+                        </td>               
+                    </tr>
+                    <tr>
+                        <th>가입일/기념일</th>
+                        <td><div class="seldatecss"><input value="==선택==" type="text" class="seldate"></div></td>
+                    </tr>
+                    <tr>
+                        <th>구매건수/금액</th>
+                        <td>
+                            <select name="num" class="select">
+                                <option disabled selected>전체</option>
+                                <option value="구매건수">구매건수</option>
+                                <option value="금액">금액</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th rowspan="2">주문일/결제완료일</th>
+                        <td>
+                            <select name="count" class="select">
+                                <option disabled selected>선택</option>
+                                <option value="직접입력하기">주문일</option>
+                                <option value="직접입력하기">결제완료일</option>
+                            </select>
+                            <input type="date" class="date"> ~ 
+                            <input type="date" class="date">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button>최근3개월</button> 
+                            <button>최근6개월</button> 
+                            <button>최근1년</button>
+                        </td> 
+                    </tr>
+                </table>
+                <div class="btn">
+                    <button type="button">검색</button>
+                    <button type="button">초기화</button>
+                </div>
+            </div>
+            <div class="section2">
+                <div class="lineup">
+                    <a href="#">아이디</a>
+                    <a href="#">이름</a>
+                    <a href="#">금액높은순</a>
+                    <a href="#">금액낮은순</a>
+                </div>
+                <table>
+                    <thead>
+                    <tr>
+                        <th>no</th>
+                        <th>아이디</th>
+                        <th>이름</th>
+                        <th>주문건수</th>
+                        <th>총구매금액</th>
+                        <th>e-mail수신여부</th>
+                        <th>e-mail</th>
+                        <th>연락처</th>
+                        <th>삭제</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>rkskek</td>
+                        <td>차은우</td>
+                        <td>10</td>
+                        <td>150,000</td>
+                        <td>Y</td>
+                        <td>rkskek@naver.com</td>
+                        <td>010-1234-5678</td>
+                        <td><a href="#">수정 / 삭제</a></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>fkakqk</td>
+                        <td>손예진</td>
+                        <td>20</td>
+                        <td>340,000</td>
+                        <td>N</td>
+                        <td>fkakqk@naver.com</td>
+                        <td>010-9123-5678</td>
+                        <td><a href="#">수정 / 삭제</a></td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>tkdkwk</td>
+                        <td>정해인</td>
+                        <td>3</td>
+                        <td>30,000</td>
+                        <td>N</td>
+                        <td>tkdkwk@naver.com</td>
+                        <td>010-4567-5678</td>
+                        <td><a href="#">수정 / 삭제</a></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

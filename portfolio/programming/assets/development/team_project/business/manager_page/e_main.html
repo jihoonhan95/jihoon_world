@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <title>관리자페이지메인</title>
+    <link href="./css/e_main_style.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="wrap header_flex">
+            <div class="header_flex logo">
+                <h1>
+                    <a href="./e_main.html">
+                        <img src="./img/icon/logo.png" alt="logo" />
+                    </a>
+                </h1>
+            </div>
+            <div>
+                <div class="header_flex header_top">
+                    <ul class="header_flex">
+                        <li>
+                            <a href="e_main.html">
+                                <img src="./img/icon/menu.png" alt="menu" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./img/icon/myp.png" alt="mypage" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">접속통계</a>
+                        </li>
+                        <li>
+                            <a href="#">1:1 문의</a>
+                        </li>
+                        <li>
+                            <a href="#">고객센터</a>
+                        </li>
+                        <li>
+                            <a href="#">HELP</a>
+                        </li>
+                    </ul>
+                    <div><a href="../h1_main.html">활명수 페이지 바로가기</a></div>
+                </div>
+                <div class="header_under">
+                    <ul class="header_flex gnb">
+                        <li>
+                            <a href="p.html">상품관리</a>
+                        </li>
+                        <li>
+                            <a href="#">주문관리</a>
+                        </li>
+                        <li>
+                            <a href="c.html">회원관리</a>
+                        </li>
+                        <li>
+                            <a href="#">디자인관리</a>
+                        </li>
+                        <li>
+                            <a href="#">모바일관리</a>
+                        </li>
+                        <li>
+                            <a href="#">마케팅</a>
+                        </li>
+                        <li>
+                            <a href="#">앱스토어</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <section class="section">
+        <div class="section1">
+            <table class="section1_table">
+                <caption>오늘 할 일</caption>
+                <tr class="ft_style">
+                    <td rowspan="2">입금 전</td>
+                    <td rowspan="2">상품준비중/<br/>배송보류중</td>
+                    <td rowspan="2">배송준비중</td>
+                    <td rowspan="2">배송대기</td>
+                    <td rowspan="2">배송중</td>
+                    <td colspan="2">취소</td>
+                    <td colspan="2">교환</td>
+                    <td colspan="2">반품</td>
+                    <td rowspan="2">환불 전</td>
+                    <td rowspan="2">게시물관리</td>
+                </tr>
+                <tr class="ft_style">
+                    <td>신청</td>
+                    <td>처리중</td>
+                    <td>신청</td>
+                    <td>처리중</td>
+                    <td>신청</td>
+                    <td>처리중</td>
+                </tr>
+                <tr>
+                    <td>0</td>
+                    <td>10</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                </tr>
+            </table>
+        </div>
+        <div class="section2">
+            <h3>온라인 구매정보</h3>
+            <div class="background ft_style">
+                <ul class="flex">
+                    <li><a href="#">일별 구매정보</a></li>
+                    <li><a href="#">월별 구매정보</a></li>
+                    <li><a href="#">주문처리현황</a></li>
+                </ul>
+                <div class="flex">
+                    <div>
+                        <canvas id="myChart"></canvas>
+                    </div>
+                    <div>
+                        <div class="online">
+                            <table class="section2_tabl">
+                                <tr class="ft_style">
+                                    <td>날짜</td>
+                                    <td>주문</td>
+                                    <td>결제</td>
+                                    <td>환불(취소/반품)</td>
+                                </tr>
+                                <tr class="ft_style2">
+                                    <td>9월15일</td>
+                                    <td>270,100원<br>(13건)</td>
+                                    <td>70,100원<br>(0건)</td>
+                                    <td>0원<br>(0건)</td>
+                                </tr>
+                                <tr class="ft_style2">
+                                    <td>9월16일</td>
+                                    <td>223,450원<br>(11건)</td>
+                                    <td>223,450원<br>(0건)</td>
+                                    <td>0원<br>(0건)</td>
+                                </tr>
+                                <tr class="ft_style2">
+                                    <td>9월17일(오늘)</td>
+                                    <td>332,000원<br>(17건)</td>
+                                    <td>320,000원<br>(0건)</td>
+                                    <td>12,000원<br>(1건)</td>
+                                </tr>
+                                <tr class="ft_style2">
+                                    <td>최근 7일 평균</td>
+                                    <td>0원<br>(0건)</td>
+                                    <td>0원<br>(0건)</td>
+                                    <td>0원<br>(0건)</td>
+                                </tr>
+                                <tr class="ft_style2">
+                                    <td>최근 7일 합계</td>
+                                    <td>0원<br>(0건)</td>
+                                    <td>0원<br>(0건)</td>
+                                    <td>0원<br>(0건)</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="table_text">
+                            <p>최종업데이트 일시 : 2022년 9월 17일 12 : 00 (1시간 마다 업데이트)</p>
+                            <p>합계/평균에 오늘은 포함되지 않고 어제 이전 데이터가 포함 됩니다.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="flex section3">
+            <div class="notice_board">
+                <table>
+                    <caption><a href="#">게시판 현황</a></caption>
+                    <tr class="ft_style">
+                        <td>날짜</td>
+                        <td>공지사항</td>
+                        <td>상품후기</td>
+                        <td>상품Q&A</td>
+                    </tr>
+                    <tr>
+                        <td>9월 12일</td>
+                        <td>0건</td>
+                        <td>0건</td>
+                        <td>0건</td>
+                    </tr>
+                    <tr>
+                        <td>9월 13일</td>
+                        <td>0건</td>
+                        <td>0건</td>
+                        <td>0건</td>
+                    </tr>
+                    <tr>
+                        <td>9월 14일</td>
+                        <td>0건</td>
+                        <td>0건</td>
+                        <td>0건</td>
+                    </tr>
+                    <tr>
+                        <td>9월 15일</td>
+                        <td>0건</td>
+                        <td>0건</td>
+                        <td>0건</td>
+                    </tr>
+                    <tr>
+                        <td>9월 16일</td>
+                        <td>0건</td>
+                        <td>0건</td>
+                        <td>0건</td>
+                    </tr>
+                    <tr>
+                        <td>9월 17일 (금일)</td>
+                        <td>0건</td>
+                        <td>0건</td>
+                        <td>0건</td>
+                    </tr>
+                    <tr>
+                        <td>합계</td>
+                        <td>0건</td>
+                        <td>0건</td>
+                        <td>0건</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="accessor">
+                <ul class="flex ft_style">
+                    <li><a href="#">실시간 접속자</a></li>
+                    <li><a href="#">일별 접속자</a></li>                   <li><a href="#">월별 접속자</a></li>
+                </ul>
+                <div>
+                    <canvas id="accessor"></canvas>
+                </div>
+            </div>
+            <div class="Service_center">
+                <h3>고객센터 접수 정보</h3>
+                <div class="CenterChart_h">
+                    <canvas id="CenterChart"></canvas>
+                </div>
+            </div>
+            <div class="center">
+                <ul class="flex">
+                    <li>2022년 9월 16일 고객센터 접수내용</li>
+                    <li><a href="#">자세히보기 ></a></li>
+                </ul> 
+                <table>
+                    <tr class="ft_style">
+                        <td>아이디/이름</td>
+                        <td>접수내용</td>
+                        <td>답변사황</td>
+                    </tr>
+                    <tr>
+                        <td>박명수</td>
+                        <td>활명수 약이랑 같이 먹어도 되나요?</td>
+                        <td>O</td>
+                    </tr>
+                    <tr>
+                        <td>미스코리아_진</td>
+                        <td>미인활과 활명수 차이가 뭔가요?</td>
+                        <td>O</td>
+                    </tr>
+                    <tr>
+                        <td>한라봉</td>
+                        <td>맛이 이상한데 상한 것 같아요</td>
+                        <td>X</td>
+                    </tr>
+                    <tr>
+                        <td>자이언트베이비</td>
+                        <td>애기들이 먹을 수 있나요?</td>
+                        <td>X</td>
+                    </tr>
+                    <tr>
+                        <td>포로로</td>
+                        <td>병말고 포로 된것도 있던데 인터넷에서 안파나요?</td>
+                        <td>X</td>
+                    </tr>
+                    <tr>
+                        <td>보스베이비</td>
+                        <td>애기가 먹는다면 얼만큼 먹여야하나요?</td>
+                        <td>X</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <script src="./js/e_main.js"></script>
+
+
+
+
+
+
+</body>
+</html>

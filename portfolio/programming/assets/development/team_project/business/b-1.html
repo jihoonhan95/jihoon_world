@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <title>장바구니</title>
+	<link rel="stylesheet" href="./css/b-1_style.css" />
+	<script type="text/javascript" src="./js/b-1.js"></script>  
+	
+	
+</head>
+
+<body>
+    <header>
+        <div id="header">
+            <ul class="flex" id="util">
+                <li><a href="./l.html">로그인</a></li>
+                <li><a href="./l2-1.html">회원가입</a></li>
+                <li><a href="./s.html">제품판매약국 찾기</a></li>
+            </ul>
+            <nav class="flex"> 
+                <h1 id="logo">
+                    <a href="./h1_main.html">
+                        <img src="./img/icon/logo.png" alt="logo" />
+                    </a>
+                </h1>
+                <ul id="gnb">
+                    <li>
+                        <a href="./g1.html">브랜드 스토리</a>
+                    </li>
+                    <li>
+                        <a href="./g2.html">제품정보</a>
+                    </li>
+                    <li>
+                        <a href="./g3.html">상품구매</a>
+                    </li>
+                    <li>
+                        <a href="./m1.html">마이페이지</a>
+                    </li>
+                    <li>
+                        <a href="./m1.html"><img src="./img/icon/mypage.png" alt="mypage" /></a>
+                        <a href="./b-1.html"><img src="./img/icon/shoppingcart.png" alt="shoppingcart" /></a>
+                    </li>
+                    <li>
+                        <a href="./b-1.html">장바구니</a>
+                    </li>
+                    <li>
+                        <a href="./s.html">
+                            제품판매약국찾기
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./l.html">
+                            로그인/회원가입
+                        </a>
+                    </li>
+                </ul>
+                <div id="m_btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>    
+<section class="wrap">
+    <h2>장바구니 비었을때</h2>
+    <ul>
+        <li>1<br/>장바구니</li>
+        <li>&nbsp;</li>
+        <li>2<br/>주문/결제</li>
+        <li>&nbsp;</li>
+        <li>3<br/>주문완료</li>
+    </ul>
+</section>
+<div class="wrap">
+<form name="orderform" id="orderform" method="post" class="orderform" action="/Page" onsubmit="return false;">
+    <section>
+        <h2>왼쪽</h2>
+        <div class="choice">
+            <a href="javascript:void(0)" class="abutton" onclick="javascript:basket.delCheckedItem();">선택상품삭제</a>
+        </div>
+        <div id="basket" class="clear">
+            <div class="row data">
+                <div class="subdiv price0">
+                    <div class="check">
+                        <input type="checkbox" name="buy" value="260" checked="" onclick="javascript:basket.checkItem();" id="chk1" />
+                        &nbsp;
+                        <label for="chk1" class="chkBox">&nbsp;</label>
+                    </div>
+                    <div class="pname1">
+                        <span>까스활액</span>
+                    </div>
+                    <div class="basketcmd"><a href="javascript:void(0)" class="abutton delete1" onclick="javascript:basket.delItem();">삭제</a></div>
+                </div>
+                <div class="subdiv price1">
+                    <div class="img img1"><img src="./img/b_img/img01.jpg"></div>
+                    <div class="basketprice"><input type="hidden" name="p_price" id="p_price1" class="p_price" value="12000"><p class="delivery1">배송비 무료 | 일반 택배 </p></div>
+                    <div class="num">
+                        <div class="updown">
+                            <span onclick="javascript:basket.changePNum(1);"><i class="down" id="mi01">-</i></span>
+                            <input type="text" name="p_num1" id="p_num1" size="2" maxlength="4" class="p_num" value="1" onkeyup="javascript:basket.changePNum(1);">
+                            <span onclick="javascript:basket.changePNum(1);"><i class="up" id="plus01">+</i></span>
+                        </div>
+                    </div>
+                    <div class="sum">12,000원</div>
+                </div>
+            </div>
+            <div class="row data">
+                <div class="subdiv price">
+                    <div class="check">
+                        <input type="checkbox" name="buy" value="261" checked="" onclick="javascript:basket.checkItem();" id="chk2" />
+                        &nbsp;
+                        <label for="chk2" class="chkBox">&nbsp;</label>
+                    </div>
+                    <div class="pname2">
+                        <span>미인활액</span>
+                    </div>
+                    <div class="basketcmd"><a href="javascript:void(0)" class="abutton delete2" onclick="javascript:basket.delItem();">삭제</a></div>
+                </div>
+                <div class="subdiv price2">
+                    <div class="img img2"><img src="./img/b_img/img02.jpg"></div>
+                    <div class="basketprice delivery1"><input type="hidden" name="p_price" id="p_price2" class="p_price" value="12000">배송비 무료 | 일반 택배</div>
+                    <div class="num">
+                        <div class="updown">
+                            <span onclick="javascript:basket.changePNum(2);"><i class="down" id="mi02">-</i></span>
+                            <input type="text" name="p_num2" id="p_num2" size="2" maxlength="4" class="p_num" value="1" onkeyup="javascript:basket.changePNum(2);">
+                            <span onclick="javascript:basket.changePNum(2);"><i class="up" id="plus02">+</i></span>
+                        </div>
+                    </div>
+                    <div class="sum sum2">12,000원</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <h2>오른쪽</h2>
+        <div class="right clear">
+            <div class="wrap right-align sumcount" id="sum_p_num">전체상품 : 2개</div>
+            <div class="right1">
+            <p>주문금액</p>
+            <div class="bigtext right-align summoney" id="sum_p_price">24,000원</div>
+            </div>
+            <div class="right2">
+            <p>배송비</p>
+            <div class="free">무료</div>
+            </div>
+            <hr/>
+            <div class="right3">
+            <p>결제금액</p>
+            <div class="bigtext right-align summoney" id="sum_p_price1">24,000원</div>
+            </div> 
+        </div>
+        <div id="goorder" class="right-align">
+                <div onclick="location.href ='./g3-1.html'" class="bigtext right-align summoney" id="sum_p_price2">24,000원 결제하기</div>
+                <a href="./g3-1.html">주문하기</a>
+        </div>
+    </section>
+</form>
+</div>
+    <footer>
+        <div>
+            <div id="footer_sns">
+                <ul class="flex">
+                    <li>
+                        <a href="#">
+                            <img src="./img/icon/f.png" alt="facebook" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./img/icon/u.png" alt="youtube" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./img/icon/in.png" alt="instagram" />
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="flex" id="footer_under">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <img src="./img/icon/ft_logo.png" alt="logo" />
+                        </a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                    <p>04552 서울특별시 중구 남대문로 9길 24 패스트파이브 타워 6~8층 &nbsp;&nbsp; 대표이사 : 유준하, 한종현</p>
+                    <p>Tel : 02-2021-9300 &nbsp;&nbsp; Mail : dogwha@dong-wha.co.kr &nbsp;&nbsp; 사업자등록번호 : 110-81-00102</p>
+                    </li>
+                </ul>
+                <ul>
+                    <li><a href="#">개인정보 취급 방침</a></li>
+                    <li>Copyright (c) DONG WHA PHARM. CO., LTD ALL Rights Reserved. </li>
+                    <li><a href="./manager_page/e_main.html">관리자 페이지</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="./js/common.js"></script>
+</body>
+</html>

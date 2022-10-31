@@ -45,7 +45,7 @@
 
       /* WOW Scroll Spy
     ========================================================*/
-     var wow = new WOW({
+    var wow = new WOW({
       //disabled for mobile
         mobile: false
     });

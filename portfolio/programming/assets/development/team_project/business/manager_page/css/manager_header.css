@@ -1,0 +1,52 @@
+@charset  "utf-8";
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.5/dist/web/static/pretendard.css");
+@import url('https://webfontworld.github.io/sebang/SebangGothic.css');
+/*
+font-family: 'SEBANG_Gothic_Bold';
+font-family: 'Pretendard-Regular';
+*/
+
+header{border-bottom:1px solid #d3d3d3; font-family: 'Pretendard-Regular';}
+/* 공통 */
+.wrap{max-width:1440px; margin:0 auto;}
+.header_flex{display:flex; flex-flow:row wrap;}
+
+/* 로고 */
+.wrap>div>h1>a>img{width:100%;}
+.wrap>div.logo{ width: 8%; margin: 2% 2% 1% 2%;}
+.wrap>div:last-child{width:88%;}
+
+/* 유틸 상단 */
+.header_top{justify-content:space-between; height:50%; margin:2px 3%} 
+.header_top>ul>li{margin-right:20px;}
+.header_top ul li:nth-child(1),
+.header_top ul li:nth-child(2){margin-top:5px;}
+.header_top>ul>li>a{font-size:0.85555vw; color:#606060;}
+.header_top>ul>li:last-child{margin:0;}
+.header_top>ul>li>a>img{width:20px;}
+.header_top>div{font-size:0.85555vw; margin-top:5px;}
+
+
+.header_under{height:50%; margin:0 3%;}
+.header_top,.header_under{line-height:2.5;}
+
+/* gnb */
+.gnb{justify-content: space-between;}
+.gnb>li>a{color:#606060; font-size:0.9vw; font-weight:bold;}
+
+.gnb>li:hover>a{
+    font-weight:800;
+    color:#9EB4A8;
+    border-bottom:3px solid #9EB4A8;
+    padding-bottom: 18px;
+    box-sizing: border-box;
+}
+
+
+
+@media all and (max-width:1024px){
+
+    div.logo>h1>a>img{width:80px;}
+
+
+}

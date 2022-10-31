@@ -1,0 +1,109 @@
+@charset  "utf-8";
+@import "reset.css";
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.5/dist/web/static/pretendard.css");
+
+
+/*pc 버전*/
+
+/*공통 사용*/
+.wrap{
+    width:400px; 
+    margin:0 auto;
+    padding:7% 0 10% 0;
+    color:#444;
+    text-align: center;
+}
+h2{
+	display:none;
+	visibility:hidden;
+	width:0; height:0;
+	overflow:hidden;
+	text-indent:-9999px;
+}
+/*section LOGIN 영역*/
+.section1 h3{
+    font-size:30px; font-weight:700; 
+    border-bottom:1px solid #37594b;
+    padding-bottom: 20px;
+}
+.idpw{margin-top:20px; padding:10px;}
+.idpw p {
+    margin-bottom: 20px; 
+    padding-left:40px;
+    background: url('../img/g2_img/login_circle.png') no-repeat 10px;
+    background-size:6%;
+    font-size:20px;
+}
+.idpw  input{
+    width:300px;
+    background: #eee; border:0; 
+    padding:10px;
+}
+
+
+.button{padding-bottom:15px;}
+
+.section1 .button a{
+    width:345px; padding:10px; border:0; 
+    font-size:15px; 
+    color:#fff; 
+    font-weight: bold;
+    background: #919090;
+    display: inline-block;
+}
+
+
+.button a:hover{background: rgba(0, 0, 0, 0.5);}
+.button a:first-child:hover{background: #5d9a81;}
+
+.button a:first-child{background: #37594b; margin-bottom:20px;}
+
+.function{
+    padding:0 20px;
+    display: flex; justify-content: space-between;
+    font-size:13px;
+    margin-bottom:20px;
+    border-bottom:1px solid #eee;
+    padding-bottom: 20px;
+
+}
+input[id="saveChk"]{
+    position:relative;
+    top:2px;
+    margin-right:5px;
+}
+.link a{position:relative;padding:0 5px;}
+.link a::after{
+    content:"|";
+    display:block;
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%);
+    left:-3px;
+  } 
+  .link a:first-child::after{display:none;}
+
+  .sns_login p{font-size:14px; margin-bottom:20px;}
+  .sns_login a{margin:0 15px;}
+
+
+  /* 모바일 버전 (1024px) */
+@media all and (max-width:1024px){
+    .wrap{padding:18% 0;}
+}
+
+@media(max-width:375px){
+.wrap{width:375px;}
+.idpw {
+    margin-top: 20px;
+    padding: 10px 0;
+}
+.idpw p {
+    margin-bottom: 20px;
+    padding-left: 33px;
+    background: url(../img/g2_img/login_circle.png) no-repeat 10px;
+    background-size: 6%;
+    font-size: 20px;
+}
+.section1 .button a{width:335px;}
+}

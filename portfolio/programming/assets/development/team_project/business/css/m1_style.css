@@ -1,0 +1,235 @@
+@charset  "utf-8";
+@import "reset.css";
+@import "common.css";
+
+/*현재 페이지 영역*/
+.section01{
+    text-align:center;
+    width:100%;
+    margin-top:80px;
+}
+.section01>h3{
+    font-size:2rem;
+    font-weight:700;
+    margin-top:50px;
+    color:#222;
+}
+.section01>p{
+    margin:20px 0 60px 0;
+    color:#222;
+}
+.section01 div{
+    /*margin-left:34%;*/
+    display: inline-block;
+    margin: 0 auto;
+    position: relative;
+}
+.section01>div>a{
+    width:10vw; height:40px;
+    line-height:40px;
+    float:left;
+    border:1px solid #aaa;
+    border-radius:30px;
+    font-size:1.2vw;
+    font-weight:500;
+    color:#222;
+}
+.section01>div>a:nth-child(1){
+    background:#37594B;
+    color:#fff;
+    border: 0;
+}
+.section01>div>a:nth-child(2){
+    margin: 0 30px;
+}
+.section01>div>a:last-child{margin-right:0;}
+.section01>div::after{
+	content:'';
+	width:0; height:0;
+	display:block;
+	clear:both;
+	visibility:hidden;
+}
+
+/*타이틀 영역*/
+#title{
+    width:70%; height:50px;
+    text-align:left;
+    border-bottom:3px solid #37594B;
+    margin:50px auto 0;
+}
+#title>h4{
+    font-size:1.6rem;
+    font-weight:600;
+    line-height:50px;
+    color:#222;
+}
+
+/*회원정보 영역*/
+.section02{
+    width:60%; height:600px;
+    margin:80px auto 0;
+    position: relative;
+}
+.section02>ul>li{
+    width:100%; height:80px;
+    border-bottom:2px solid #ddd;
+
+}
+.section02>ul>li:nth-child(5){height:80px;}
+.section02>ul>li:nth-child(5)>span:last-child{
+    vertical-align:middle;
+    line-height:1;    
+}
+.section02>ul>li:nth-child(6){border-bottom: 0;}
+/*.section02>ul>li:nth-child(7){border-bottom:0;}*/
+#agree{
+    height: 10px;
+    
+}
+.section02>ul>li:nth-child(6)>span:last-child{
+    vertical-align:middle;
+    line-height:1; 
+
+}
+.section02>ul>li span{
+    font-size:1vw;
+    font-weight:500;
+    display:inline-block;
+    line-height:80px;
+}
+.section02>ul>li>span:first-child{
+    width:20%;
+    font-size:1.2vw;
+
+}
+.section02>ul>li>span:last-child{
+    width:78%;
+    font-size: 1vw;
+    font-weight: 400;
+}
+#sns{
+    font-weight: 400;
+    font-size: 1vw;
+    position: absolute;
+    top:80%;
+    left: 20%;
+    margin-top: 10px;
+}
+#sns>span{
+    display:block;
+}
+input[type="checkbox"]{
+    margin:0 10px 0 30px;
+}
+
+/*하단 버튼 영역*/
+.section03{
+    width:75%; height:80px;
+    margin:50px auto 0;
+    text-align:center;
+    position:relative;
+}
+.section03>div{
+    display: inline-block;
+}
+
+.section03>div>a{
+    width:10vw; height:50px;
+    font-size:1.2vw;
+    font-weight:600;
+    float:left;
+    border:2px solid #37594B;
+    color:#37594B;
+    line-height:50px;
+    margin: 0 40px;
+}
+
+.section03>div>a:hover{
+    background:#37594B;
+    color:#fff;
+}
+.section03>div::after{
+	content:'';
+	width:0; height:0;
+	display:block;
+	clear:both;
+	visibility:hidden;
+}
+/*푸터 영역*/
+footer{margin-top:30px;}
+
+
+
+
+
+/*모바일*/
+@media all and (max-width:1024px){
+
+    .section01>div>a{
+        width:20vw; height:35px;
+        line-height:35px;
+        border:1px solid #aaa;
+        border-radius:30px;
+        font-size:1.2rem;
+        font-weight:500;
+        color:#222;
+    }
+    #title{width:90%;}
+    .section02{
+        width:80%; height:600px;
+        margin:20px auto 0;
+    }
+
+    /*정보 글씨*/
+    .section02>ul>li:nth-child(6)>span:last-child{
+        font-size: 1rem;
+        width: 60%;
+    }
+    .section02>ul>li>span:first-child{
+        width:30%;
+        font-size: 1.1rem;
+    
+    }
+    .section02>ul>li>span:last-child{
+        width:60%;
+        font-size:  1.1rem;
+        font-weight: 400;
+    }
+    #sns{
+        display:flex;
+        width:70%;
+        font-weight: 400;
+        font-size: 1.1rem;
+        left: 20%;
+        
+    }
+    .section02 div span{
+        margin-left:75px;
+    }
+    input[type="checkbox"]{
+        margin:0;
+    }
+
+
+    /*M 버튼*/
+    .section03>div>a{
+        width:25vw; height:50px;
+        font-size:1.2rem;
+        font-weight:600;
+        float:left;
+        border:1px solid #37594B;
+        color:#37594B;
+        line-height:50px;
+        margin: 0 10px;
+    }
+
+    .section03{
+        width:75%; height:80px;
+        margin:5px auto 0;
+        text-align:center;
+        position:relative;
+    }
+
+    
+}

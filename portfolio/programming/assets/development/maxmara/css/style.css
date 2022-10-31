@@ -1,0 +1,161 @@
+@charset "utf-8";
+@import "reset.css";
+a,a:link,a:visited,a:hover,a:active{
+    text-decoration:none;
+    color:#333;
+}
+
+
+/* 공통 컴포먼트 (사용 부품) - 버튼 스타일 200 x 35 */
+.black_btn{
+    width:200px; height:35px;
+    line-height:35px;
+    display:inline-block;
+    background:#fff;
+    color:#000;
+    text-align:center;
+    font-size:14px;
+    font-weight:800;
+    cursor:pointer;
+    box-sizing:border-box;
+}
+.white_btn{
+    width:200px; height:35px;
+    line-height:35px;
+    display:inline-block;
+    background:#fff;
+    color:#000;
+    text-align:center;
+    font-size:14px;
+    cursor:pointer;
+    border:1px solid #000;
+    box-sizing:border-box;
+    font-family:serif;
+}
+
+/* 레이아웃 공통 사용 */
+section>h2{
+	display:none;
+	visibility:hidden;
+	width:0; height:0;
+	overflow:hidden;
+	text-indent:-99999px;
+}
+
+#container{
+    width:100%;
+    /* max-width:1430px; 최대 고정픽셀 사이즈는 1430px 까지만 쓸수있음 */
+    margin:0 auto
+}
+
+/* flex 컨테이너 스타일 */
+.header, #gnb, #util, #collection,#collection>div, .small_bnr, .behind, .footer{
+    display:flex;
+    flex-flow:row wrap;
+    justify-content:space-around;
+    align-items:center;
+}
+
+/* 해더 스타일 */
+#gnb a, #util a, .header>h1{
+    display:block;
+    font-weight:bold;
+    line-height:70px;
+    padding:0 20px;
+}
+#gnb{justify-content: center;}
+#util a img, .header>h1 img{vertical-align: middle;}
+
+/* 비주얼 영역 */
+#visual_bnr, #visual_bnr img{width:100%;}
+
+/* 컬렉션 영역 */
+.img_box1, .img_box2{
+    width:760px; height:438px;
+    margin-bottom:80px;
+    background:url() no-repeat center/cover;
+    border: 1px solid #ccc;
+    box-sizing:border-box;
+}
+.collection1_background{
+    background-color:#cdb8a7;
+    width:100%;
+    padding-top:70px;
+}
+.collection2_background{
+    background-color:#1b232e;
+    width:100%;
+    padding-top:70px;
+}
+.img_box1{background-image:url('../images/img1.jpg');}
+.img_box2{background-image:url('../images/img2.jpg');}
+#collection{margin:80px auto 0; max-width:1430px;}
+.text_box{width:400px; margin-top:60px; margin-bottom:80px; color:#fff;}
+.text_box>p:nth-child(1){font-size:2em; }
+.text_box>p:nth-child(2){font-size:1.2em; margin:15px 0;}
+.text_box>p:nth-child(3){line-height:2;}
+
+/* 프로모션 배너 영역 */
+#promotion_bnr{margin:80px 0 ;}
+
+
+.small_bnr>figure{margin:0 20px;}
+.small_bnr>img{width:15%;}
+.large_bnr{
+    width:100%;
+    height:320px;
+    background:url('../images/img05.jpg') no-repeat center/cover;
+    /* 가변이미지를 만드는 가장 쉬운방법 : css에서 백그라운드 처리하기 */
+    margin-top:80px;
+}
+
+
+/* 비하인드 씬 영역 */
+.scenes_wrap{width:90%; margin:0 auto;}
+.scenes_wrap>h3{
+    height:80px;
+    line-height:80px;
+    color:#fff;
+    background:black;
+    text-align:center;
+    font-size:1.8em;;
+}
+.behind{justify-content: flex-start;}
+.behind li{width:50%;}
+.behind li img{width:100%;}
+
+/* 푸터 스타일 */
+.footer{
+    background:#d3d3d3;
+    padding:40px 50px;
+    margin-top:80px;
+    justify-content:space-between;
+}
+.info_title{
+    font-weight:bold;
+    margin:10px 0;
+    color:#000;
+}
+.f_info>li>a{
+    display:block;
+    padding:5px 5px 5px 15px;
+}
+.footer>ul:last-child{width:40%;}
+.footer>ul:last-child>li:first-child{
+    font-size:1.8rem;
+    text-transform:uppercase;
+    font-weight:bold;
+    margin: 30px 0;
+}
+.footer>ul:last-child>li:nth-child(2){
+    line-height:2;
+    margin:20px 0;
+}
+#copyright{
+    height:55px;
+    line-height:55px;
+    background:#000;
+    color:#fff;
+    text-align:center;
+}
+

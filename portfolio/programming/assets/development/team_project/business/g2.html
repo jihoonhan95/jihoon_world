@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>제품정보</title>
+    <link href="./css/g2_style.css" rel="stylesheet" type="text/css" />
+    <link href="./css/animate.css" rel="stylesheet" type="text/css" />
+    <link href="./css/common.css" rel="stylesheet" type="text/css" />
+    <script src="./js/jQueryUI/js/jquery.js"></script>
+    <script src="./js/jQueryUI/js/jquery-ui.js"></script>
+    <script src="./js/jQueryUI/js/jquery-ui.min.js"></script>
+    <script src="./js/g2.js"></script>
+
+</head>
+<body>
+<section>
+    <header>
+        <div id="header">
+            <ul class="flex" id="util">
+                <li><a href="./l.html">로그인</a></li>
+                <li><a href="./l2-1.html">회원가입</a></li>
+                <li><a href="./s.html">제품판매약국 찾기</a></li>
+            </ul>
+            <nav class="flex"> 
+                <h1 id="logo">
+                    <a href="./h1_main.html">
+                        <img src="./img/icon/logo.png" alt="logo" />
+                    </a>
+                </h1>
+                <ul id="gnb">
+                    <li>
+                        <a href="./g1.html">브랜드 스토리</a>
+                    </li>
+                    <li>
+                        <a href="./g2.html">제품정보</a>
+                    </li>
+                    <li>
+                        <a href="./g3.html">상품구매</a>
+                    </li>
+                    <li>
+                        <a href="./m1.html">마이페이지</a>
+                    </li>
+                    <li>
+                        <a href="./m1.html"><img src="./img/icon/mypage.png" alt="mypage" /></a>
+                        <a href="./b-2.html"><img src="./img/icon/shoppingcart.png" alt="shoppingcart" /></a>
+                    </li>
+                    <li>
+                        <a href="./b-2.html">장바구니</a>
+                    </li>
+                    <li>
+                        <a href="./s.html">
+                            제품판매약국찾기
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./l.html">
+                            로그인/회원가입
+                        </a>
+                    </li>
+                </ul>
+                <div id="m_btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+<div class="wrap">
+    <div class="section1"> 
+        <h2>제품 사진 슬라이드 영역</h2>
+       <div class="product">
+            <div class="inner">
+                <a href="#" class="button prev-button"><img class="circle02" src="./img/g2_img/circle02.png" alt="circle02"/></a>
+                <ul>
+                    <li class="active">
+                        <div class="product_img">
+                        <div class="img img1">
+                            <img src="./img/g2_img/product-1.png" alt="product-1"/>
+                        </div>
+                        <ul class="info">
+                            <li>유소아 복용가능(만 1세이상)</li>
+                            <li>10가지 생약성분</li>
+                            <li>보존제 무첨가</li>
+                        </ul>
+                        </div>
+                        <p class="text"><strong>까스 활명수</strong>큐액</p>
+                    </li>
+                    <li>
+                        <div class="product_img">
+                        <div class="img img2">
+                            <img src="./img/g2_img/product-2.png" alt="product-2"/>
+                        </div>
+                        <ul class="info">
+                            <li>1회복용 스틱형 포장(10ml)<br/>(5~7세기준)</li>
+                            <li>건위에서 정장까지</li>
+                            <li>천연 딸기 / 오렌지라임향<br/> 함유</li>
+                        </ul>
+                        </div>
+                        <p class="text"><strong>꼬마 활명수</strong>액</p>
+                    </li>
+                    <li>
+                        <div class="product_img">
+                        <div class="img img1">
+                            <img src="./img/g2_img/product-1.png" alt="product-1"/>
+                        </div>
+                        <ul class="info">
+                            <li>유소아 복용가능(만 1세이상)</li>
+                            <li>10가지 생약성분</li>
+                            <li>보존제 무첨가</li>
+                        </ul>
+                        </div>
+                        <p class="text"><strong>까스 활명수</strong>큐액</p>
+                    </li>
+                    <li>
+                        <div class="product_img">
+                        <div class="img img1">
+                            <img src="./img/g2_img/product-1.png" alt="product-1"/>
+                        </div>
+                        <ul class="info">
+                            <li>유소아 복용가능(만 1세이상)</li>
+                            <li>10가지 생약성분</li>
+                            <li>보존제 무첨가</li>
+                        </ul>
+                        </div>
+                        <p class="text"><strong>까스 활명수</strong>큐액</p>
+                    </li>
+                    <li>
+                        <div class="product_img">
+                        <div class="img img1">
+                            <img src="./img/g2_img/product-1.png" alt="product-1"/>
+                        </div>
+                        <ul class="info">
+                            <li>유소아 복용가능(만 1세이상)</li>
+                            <li>10가지 생약성분</li>
+                            <li>보존제 무첨가</li>
+                        </ul>
+                        </div>
+                        <p class="text"><strong>까스 활명수</strong>큐액</p>
+                    </li>
+                </ul>
+                <a href="#" class="button next-button"><img class="circle02" src="./img/g2_img/circle02.png" alt="circle02"/></a>
+                <a href="#" class="button next-text">next ></a>
+                <div class="carousel">
+                    <a class="active" href="#"></a>
+                    <a href="#"></a>
+                    <a href="#"></a>
+                    <a href="#"></a>
+                    <a href="#"></a>
+                </div>
+            </div>
+        </div>
+        <h2>제품 특징 영역</h2>
+        <div class="character">
+            <h3><strong>증상</strong>에 따른 <strong>활명수</strong>를 확인 하고
+                <strong>제품 특징</strong>을 알아보세요.
+            </h3>
+            <div>
+            <div class="detail active">
+                <ul>
+                    <li>
+                        <dl>
+                            <dt>제품분류</dt>
+                            <dd>일반의약품>소화기관용약(건위소화제)</dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>효능・효과</dt>
+                            <dd>소화불량, 과식, 체함, 위부팽만감, 구역, 구토, 식욕감퇴 (식욕부진)</dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>용법・용량</dt>
+                            <dd>
+                                <p><img src="./img/g2_img/squre.png" alt="squre"/>&nbsp; &nbsp;1일 3회 식후 복용 ,  복용 간격은 4시간 이상으로 한다.</p>
+                                <div class="textbox">
+                                    <div class="txt">
+                                        만1세 이상-만3세미만:1회1/5병(15ml)<br/>
+                                        만3세 이상-만5세미만:1회1/4병(18.75ml)<br/>
+                                        만5세 이상-만8세미만:1회1/3병(25ml)
+                                    </div>
+                                    <div class="txt">
+                                        만8세 이상-만11세미만:1회1/2병(37.5ml)<br/>
+                                        만11세 이상-만15세미만:1회2/3병(50ml)<br/>
+                                        만15세 이상: 1회1병(75mL)
+                                    </div>
+                                </div>
+                                </dd>
+                            </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>포장단위</dt>
+                            <dd>75 ml</dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>유효성분<br/>
+                                (1병 75ml 중)
+                            </dt>
+                            <dd>
+                                <ul class="element">
+                                    <li class="element_left">
+                                        육계	30 mg	<br/>
+                                        현호색	180 mg	<br/>
+                                        정향	12 mg	<br/>
+                                        육두구	6 mg	<br/>
+                                        L-멘톨	16 mg
+                                    </li>	
+                                    <li class="element_right">
+                                        진피	250 mg <br/>
+                                        건강	12 mg <br/>
+                                        후박	50 mg <br/>
+                                        창출	3 mg <br/>
+                                        아선약	100 mg <br/>
+                                        고추틴크	0.06 mL
+                                    </li>
+                                </ul>
+                            </dd>
+                        </dl>
+                    </li>
+                </ul>
+            </div>
+            <div class="detail">
+                <ul>
+                    <li>
+                        <dl>
+                            <dt>제품분류</dt>
+                            <dd>일반의약품>소화기관용약(건위소화제)</dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>효능・효과</dt>
+                            <dd>식욕감퇴(식욕부진), 위부팽만감, 소화불량, 과식, 체함, 구역, 구토, 정장, 변비,
+                                묽은 변, 복부팽만감, 장내이상발효</dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>용법・용량</dt>
+                            <dd>
+                                <p><img src="./img/g2_img/squre.png" alt="squre"/>&nbsp; &nbsp;1일 3회 식후 복용 ,  복용 간격은 4시간 이상으로 한다.</p>
+                                <div class="textbox">
+                                    <div class="txt">
+                                        만1세 이상-만 3세 미만 : 1회 6mL<br/>
+                                        만3세 이상-만 5세 미만 : 1회 7.5mL<br/>
+                                        만5세 이상-만 8세 미만 : 1회 10mL(25ml)
+                                    </div>
+                                    <div class="txt">
+                                        만 8세 이상-만 11세 미만 : 1회 15mL <br/>
+                                      만 11세 이상-만 15세 미만 : 1회 20mL<br/>
+                                    </div>
+                                </div>
+                                </dd>
+                            </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>포장단위</dt>
+                            <dd>10mL/포 * 5개</dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>유효성분<br/>
+                                (1병 75ml 중)
+                            </dt>
+                            <dd>
+                                <ul class="element">
+                                    <li class="element_left">
+                                        육계	270 mg	<br/>
+                                        정향	108 mg	<br/>
+                                        건강	180 mg	<br/>
+                                        육두구	54 mg	<br/>
+                                        진피	1.666.7 mg
+                                    </li>	
+                                    <li class="element_right">
+                                        후박	333.3 mg <br/>
+                                        현호색	1.200 mg <br/>
+                                        아선약	666.7 mg <br/>
+                                        오매	2.233 mg  
+                                    </li>
+                                </ul>
+                            </dd>
+                        </dl>
+                    </li>
+                </ul>
+            </div>
+            <div class="detail">
+                <ul>
+                    <li>
+                        <dl>
+                            <dt>제품분류</dt>
+                            <dd>일반의약품>소화기관용약(건위소화제)</dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>효능・효과</dt>
+                            <dd>소화불량, 과식, 체함, 위부팽만감, 구역, 구토, 식욕감퇴 (식욕부진)</dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>용법・용량</dt>
+                            <dd>
+                                <p><img src="./img/g2_img/squre.png" alt="squre"/>&nbsp; &nbsp;1일 3회 식후 복용 ,  복용 간격은 4시간 이상으로 한다.</p>
+                                <div class="textbox">
+                                    <div class="txt">
+                                        만1세 이상-만3세미만:1회1/5병(15ml)<br/>
+                                        만3세 이상-만5세미만:1회1/4병(18.75ml)<br/>
+                                        만5세 이상-만8세미만:1회1/3병(25ml)
+                                    </div>
+                                    <div class="txt">
+                                        만8세 이상-만11세미만:1회1/2병(37.5ml)<br/>
+                                        만11세 이상-만15세미만:1회2/3병(50ml)<br/>
+                                        만15세 이상: 1회1병(75mL)
+                                    </div>
+                                </div>
+                                </dd>
+                            </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>포장단위</dt>
+                            <dd>75 ml</dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>유효성분<br/>
+                                (1병 75ml 중)
+                            </dt>
+                            <dd>
+                                <ul class="element">
+                                    <li class="element_left">
+                                        육계	30 mg	<br/>
+                                        현호색	180 mg	<br/>
+                                        정향	12 mg	<br/>
+                                        육두구	6 mg	<br/>
+                                        L-멘톨	16 mg
+                                    </li>	
+                                    <li class="element_right">
+                                        진피	250 mg <br/>
+                                        건강	12 mg <br/>
+                                        후박	50 mg <br/>
+                                        창출	3 mg <br/>
+                                        아선약	100 mg <br/>
+                                        고추틴크	0.06 mL
+                                    </li>
+                                </ul>
+                            </dd>
+                        </dl>
+                    </li>
+                </ul>
+            </div>
+            <div class="detail">
+                <ul>
+                    <li>
+                        <dl>
+                            <dt>제품분류</dt>
+                            <dd>일반의약품>소화기관용약(건위소화제)</dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>효능・효과</dt>
+                            <dd>소화불량, 과식, 체함, 위부팽만감, 구역, 구토, 식욕감퇴 (식욕부진)</dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>용법・용량</dt>
+                            <dd>
+                                <p><img src="./img/g2_img/squre.png" alt="squre"/>&nbsp; &nbsp;1일 3회 식후 복용 ,  복용 간격은 4시간 이상으로 한다.</p>
+                                <div class="textbox">
+                                    <div class="txt">
+                                        만1세 이상-만3세미만:1회1/5병(15ml)<br/>
+                                        만3세 이상-만5세미만:1회1/4병(18.75ml)<br/>
+                                        만5세 이상-만8세미만:1회1/3병(25ml)
+                                    </div>
+                                    <div class="txt">
+                                        만8세 이상-만11세미만:1회1/2병(37.5ml)<br/>
+                                        만11세 이상-만15세미만:1회2/3병(50ml)<br/>
+                                        만15세 이상: 1회1병(75mL)
+                                    </div>
+                                </div>
+                                </dd>
+                            </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>포장단위</dt>
+                            <dd>75 ml</dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>유효성분<br/>
+                                (1병 75ml 중)
+                            </dt>
+                            <dd>
+                                <ul class="element">
+                                    <li class="element_left">
+                                        육계	30 mg	<br/>
+                                        현호색	180 mg	<br/>
+                                        정향	12 mg	<br/>
+                                        육두구	6 mg	<br/>
+                                        L-멘톨	16 mg
+                                    </li>	
+                                    <li class="element_right">
+                                        진피	250 mg <br/>
+                                        건강	12 mg <br/>
+                                        후박	50 mg <br/>
+                                        창출	3 mg <br/>
+                                        아선약	100 mg <br/>
+                                        고추틴크	0.06 mL
+                                    </li>
+                                </ul>
+                            </dd>
+                        </dl>
+                    </li>
+                </ul>
+            </div>
+            <div class="detail">
+                <ul>
+                    <li>
+                        <dl>
+                            <dt>제품분류</dt>
+                            <dd>일반의약품>소화기관용약(건위소화제)</dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>효능・효과</dt>
+                            <dd>소화불량, 과식, 체함, 위부팽만감, 구역, 구토, 식욕감퇴 (식욕부진)</dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>용법・용량</dt>
+                            <dd>
+                                <p><img src="./img/g2_img/squre.png" alt="squre"/>&nbsp; &nbsp;1일 3회 식후 복용 ,  복용 간격은 4시간 이상으로 한다.</p>
+                                <div class="textbox">
+                                    <div class="txt">
+                                        만1세 이상-만3세미만:1회1/5병(15ml)<br/>
+                                        만3세 이상-만5세미만:1회1/4병(18.75ml)<br/>
+                                        만5세 이상-만8세미만:1회1/3병(25ml)
+                                    </div>
+                                    <div class="txt">
+                                        만8세 이상-만11세미만:1회1/2병(37.5ml)<br/>
+                                        만11세 이상-만15세미만:1회2/3병(50ml)<br/>
+                                        만15세 이상: 1회1병(75mL)
+                                    </div>
+                                </div>
+                                </dd>
+                            </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>포장단위</dt>
+                            <dd>75 ml</dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>유효성분<br/>
+                                (1병 75ml 중)
+                            </dt>
+                            <dd>
+                                <ul class="element">
+                                    <li class="element_left">
+                                        육계	30 mg	<br/>
+                                        현호색	180 mg	<br/>
+                                        정향	12 mg	<br/>
+                                        육두구	6 mg	<br/>
+                                        L-멘톨	16 mg
+                                    </li>	
+                                    <li class="element_right">
+                                        진피	250 mg <br/>
+                                        건강	12 mg <br/>
+                                        후박	50 mg <br/>
+                                        창출	3 mg <br/>
+                                        아선약	100 mg <br/>
+                                        고추틴크	0.06 mL
+                                    </li>
+                                </ul>
+                            </dd>
+                        </dl>
+                    </li>
+                </ul>
+            </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="section2"> 
+        <h2>FAQ영역</h2>
+        <div class="faqs">
+            <div class="faq active">
+                <h3>까스활명수큐액<span> FAQ</span></h3>
+                <ul class="ac">
+                    <li class="question">
+                    <a class="plus" href="#">까스활명수큐액은 어떻게 복용하나요?</a>
+                        <ul class="answer">
+                                <li>만 15세 이상 기준 1회 1병(75ml), 1일 3회 식후에 복용하시면 됩니다.<br/>
+                                    반드시 정해진 용법, 용량을 지켜주시기 바랍니다.
+                                </li>
+                        </ul>
+                    </li>
+                    <li class="question">
+                        <a class="plus" href="#">까스활명수큐액의 사용기한은 어떻게 되나요?</a>
+                        <ul class="answer">
+                                <li>사용기한은 복용 가능한 날짜를 의미하며, 병라벨/박스에서 확인 하실 수 있습니다.<br/>
+                                    1. 병라벨 사용기한(연. 월. 일) 순으로 표기되어 있습니다.<br/>
+                                    2. 박스 측면에 사용기한(연. 월. 일) 순으로 표기되어 있습니다.
+                                </li>
+                        </ul>
+                    </li>
+                    <li class="question">
+                        <a class="plus" href="#">까스활명수큐액을 어린이가 복용해도 되나요?</a>
+                        <ul class="answer">
+                                <li>만15세 미만도 연령별 복용 용량을 준수하여 1일 3회 식후에 복용하시면 됩니다.<br/>
+                                    연령별 복용 용량을 반드시 확인 후 복용하십시오.<br/>
+                                    ※ 만 3개월 미만의 소아에게 투여하지 않습니다. 또 만3개월 이상이라도 만 1세 미만의 소아는
+                                        의사의 진료를 받는 것을 우선으로 하여, 부득이한 경우를 제외하고 복용시키지 않는 것이 
+                                        바람직합니다.   
+                                </li>
+                        </ul>
+                    </li>
+                    <li class="question">
+                        <a class="plus" href="#">까스활명수큐액은 어디서 구입할 수 있나요?</a>
+                        <ul class="answer">
+                                <li>까스활명스큐액은 일반의약품이므로 처방전 없이 약국에서 구입이 가능합니다.<br/>
+                                    가까운 약국에서 구입하시기 바라며, 
+                                    <strong>구입처 확인은 소비자상담실<br/> (080-023-1897)</strong> 로
+                                    전화 주시면 친절히 안내해 드리겠습니다.
+                                </li>
+                        </ul>
+                    </li>
+                
+                </ul>
+            </div>
+            <div class="faq">
+                <h3>꼬마활명수액<span> FAQ</span></h3>
+                <ul class="ac">
+                    <li class="question question2">
+                    <a class="plus" href="#">꼬마활명수액은 용법 용량이 어떻게 되나요?</a>
+                        <ul class="answer">
+                                <li>꼬마활명수액은 식약처로부터 소아용의약품으로 허가 받은 건위소화제입니다. <br/>
+                                    따라서 용법용량은 만1세부터 만15세 미만의 연령별 복용 용량에 따라 1일 3회 식후 복용합니다.
+                                    복용간격은 4시간 이상으로 합니다.
+                                </li>
+                        </ul>
+                    </li>
+                    <li class="question">
+                        <a class="plus" href="#">꼬마활명수액 파우치 그림이 각각 다른데 혹시 다른 제품인가요?</a>
+                        <ul class="answer">
+                                <li>캐릭터 이미지와 무관하게 모두 동일한 제품입니다.<br/>
+                                    꼬마활명수액(10ml/포x3개)에는 동화패밀리 캐릭터 중 동희,동민,동화의 이미지가<br/>
+                                    무작위로 3포 들어있습니다.
+                                </li>
+                        </ul>
+                    </li>
+                    <li class="question">
+                        <a class="plus" href="#">꼬마활명수액과 기존 활명수(까스활명수큐액,미인활명수액,활명수액)의 복용하는 연령대가 다른가요?</a>
+                        <ul class="answer">
+                                <li>까스활명수큐액, 미인활명수액, 활명수액은 만 1세이상 소아부터 성인까지 복용할 수 있는 일반의약품입니다.
+                                    반면, 꼬마활명수액은 만 1세이상부터 만 15세 미만의 소아만을 대상으로 한 일반의약품으로 복용하는
+                                    연령대가 다릅니다.
+                                </li>
+                        </ul>
+                    </li>
+                    <li class="question">
+                        <a class="plus" href="#">꼬마활명수액 파우치가 잘 뜯어지지 않아요.</a>
+                        <ul class="answer">
+                                <li>꼬마활명수액은 어린이가 손으로 뜯을 수 없게 포장 되어있어 어른이 직접 가위를 이용해야 개봉 할 수 있습니다.</li>
+                        </ul>
+                    </li>
+                
+                </ul>
+            </div>
+            <div class="faq">
+                <h3>까스활명수큐액<span> FAQ</span></h3>
+                <ul class="ac">
+                    <li class="question">
+                    <a class="plus" href="#">까스활명수큐액은 어떻게 복용하나요?</a>
+                        <ul class="answer">
+                                <li>만 15세 이상 기준 1회 1병(75ml), 1일 3회 식후에 복용하시면 됩니다.<br/>
+                                    반드시 정해진 용법, 용량을 지켜주시기 바랍니다.
+                                </li>
+                        </ul>
+                    </li>
+                    <li class="question">
+                        <a class="plus" href="#">까스활명수큐액의 사용기한은 어떻게 되나요?</a>
+                        <ul class="answer">
+                                <li>사용기한은 복용 가능한 날짜를 의미하며, 병라벨/박스에서 확인 하실 수 있습니다.<br/>
+                                    1. 병라벨 사용기한(연. 월. 일) 순으로 표기되어 있습니다.<br/>
+                                    2. 박스 측면에 사용기한(연. 월. 일) 순으로 표기되어 있습니다.
+                                </li>
+                        </ul>
+                    </li>
+                    <li class="question">
+                        <a class="plus" href="#">까스활명수큐액을 어린이가 복용해도 되나요?</a>
+                        <ul class="answer">
+                                <li>만15세 미만도 연령별 복용 용량을 준수하여 1일 3회 식후에 복용하시면 됩니다.<br/>
+                                    연령별 복용 용량을 반드시 확인 후 복용하십시오.<br/>
+                                    ※ 만 3개월 미만의 소아에게 투여하지 않습니다. 또 만3개월 이상이라도 만 1세 미만의 소아는
+                                        의사의 진료를 받는 것을 우선으로 하여, 부득이한 경우를 제외하고 복용시키지 않는 것이 
+                                        바람직합니다.   
+                                </li>
+                        </ul>
+                    </li>
+                    <li class="question">
+                        <a class="plus" href="#">까스활명수큐액은 어디서 구입할 수 있나요?</a>
+                        <ul class="answer">
+                                <li>까스활명스큐액은 일반의약품이므로 처방전 없이 약국에서 구입이 가능합니다.<br/>
+                                    가까운 약국에서 구입하시기 바라며, 
+                                    <strong>구입처 확인은 소비자상담실<br/> (080-023-1897)</strong> 로
+                                    전화 주시면 친절히 안내해 드리겠습니다.
+                                </li>
+                        </ul>
+                    </li>
+                
+                </ul>
+            </div>
+            <div class="faq">
+                <h3>까스활명수큐액<span> FAQ</span></h3>
+                <ul class="ac">
+                    <li class="question">
+                    <a class="plus" href="#">까스활명수큐액은 어떻게 복용하나요?</a>
+                        <ul class="answer">
+                                <li>만 15세 이상 기준 1회 1병(75ml), 1일 3회 식후에 복용하시면 됩니다.<br/>
+                                    반드시 정해진 용법, 용량을 지켜주시기 바랍니다.
+                                </li>
+                        </ul>
+                    </li>
+                    <li class="question">
+                        <a class="plus" href="#">까스활명수큐액의 사용기한은 어떻게 되나요?</a>
+                        <ul class="answer">
+                                <li>사용기한은 복용 가능한 날짜를 의미하며, 병라벨/박스에서 확인 하실 수 있습니다.<br/>
+                                    1. 병라벨 사용기한(연. 월. 일) 순으로 표기되어 있습니다.<br/>
+                                    2. 박스 측면에 사용기한(연. 월. 일) 순으로 표기되어 있습니다.
+                                </li>
+                        </ul>
+                    </li>
+                    <li class="question">
+                        <a class="plus" href="#">까스활명수큐액을 어린이가 복용해도 되나요?</a>
+                        <ul class="answer">
+                                <li>만15세 미만도 연령별 복용 용량을 준수하여 1일 3회 식후에 복용하시면 됩니다.<br/>
+                                    연령별 복용 용량을 반드시 확인 후 복용하십시오.<br/>
+                                    ※ 만 3개월 미만의 소아에게 투여하지 않습니다. 또 만3개월 이상이라도 만 1세 미만의 소아는
+                                        의사의 진료를 받는 것을 우선으로 하여, 부득이한 경우를 제외하고 복용시키지 않는 것이 
+                                        바람직합니다.   
+                                </li>
+                        </ul>
+                    </li>
+                    <li class="question">
+                        <a class="plus" href="#">까스활명수큐액은 어디서 구입할 수 있나요?</a>
+                        <ul class="answer">
+                                <li>까스활명스큐액은 일반의약품이므로 처방전 없이 약국에서 구입이 가능합니다.<br/>
+                                    가까운 약국에서 구입하시기 바라며, 
+                                    <strong>구입처 확인은 소비자상담실<br/> (080-023-1897)</strong> 로
+                                    전화 주시면 친절히 안내해 드리겠습니다.
+                                </li>
+                        </ul>
+                    </li>
+                
+                </ul>
+            </div>
+            <div class="faq">
+                <h3>까스활명수큐액<span> FAQ</span></h3>
+                <ul class="ac">
+                    <li class="question">
+                    <a class="plus" href="#">까스활명수큐액은 어떻게 복용하나요?</a>
+                        <ul class="answer">
+                                <li>만 15세 이상 기준 1회 1병(75ml), 1일 3회 식후에 복용하시면 됩니다.<br/>
+                                    반드시 정해진 용법, 용량을 지켜주시기 바랍니다.
+                                </li>
+                        </ul>
+                    </li>
+                    <li class="question">
+                        <a class="plus" href="#">까스활명수큐액의 사용기한은 어떻게 되나요?</a>
+                        <ul class="answer">
+                                <li>사용기한은 복용 가능한 날짜를 의미하며, 병라벨/박스에서 확인 하실 수 있습니다.<br/>
+                                    1. 병라벨 사용기한(연. 월. 일) 순으로 표기되어 있습니다.<br/>
+                                    2. 박스 측면에 사용기한(연. 월. 일) 순으로 표기되어 있습니다.
+                                </li>
+                        </ul>
+                    </li>
+                    <li class="question">
+                        <a class="plus" href="#">까스활명수큐액을 어린이가 복용해도 되나요?</a>
+                        <ul class="answer">
+                                <li>만15세 미만도 연령별 복용 용량을 준수하여 1일 3회 식후에 복용하시면 됩니다.<br/>
+                                    연령별 복용 용량을 반드시 확인 후 복용하십시오.<br/>
+                                    ※ 만 3개월 미만의 소아에게 투여하지 않습니다. 또 만3개월 이상이라도 만 1세 미만의 소아는
+                                        의사의 진료를 받는 것을 우선으로 하여, 부득이한 경우를 제외하고 복용시키지 않는 것이 
+                                        바람직합니다.   
+                                </li>
+                        </ul>
+                    </li>
+                    <li class="question">
+                        <a class="plus" href="#">까스활명수큐액은 어디서 구입할 수 있나요?</a>
+                        <ul class="answer">
+                                <li>까스활명스큐액은 일반의약품이므로 처방전 없이 약국에서 구입이 가능합니다.<br/>
+                                    가까운 약국에서 구입하시기 바라며, 
+                                    <strong>구입처 확인은 소비자상담실<br/> (080-023-1897)</strong> 로
+                                    전화 주시면 친절히 안내해 드리겠습니다.
+                                </li>
+                        </ul>
+                    </li>
+                
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<footer>
+    <div>
+        <div id="footer_sns">
+            <ul class="flex">
+                <li>
+                    <a href="#">
+                        <img src="./img/icon/f.png" alt="facebook" />
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./img/icon/u.png" alt="youtube" />
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./img/icon/in.png" alt="instagram" />
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="flex" id="footer_under">
+            <ul>
+                <li>
+                    <a href="#">
+                        <img src="./img/icon/ft_logo.png" alt="logo" />
+                    </a>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                <p>04552 서울특별시 중구 남대문로 9길 24 패스트파이브 타워 6~8층 &nbsp;&nbsp; 대표이사 : 유준하, 한종현</p>
+                <p>Tel : 02-2021-9300 &nbsp;&nbsp; Mail : dogwha@dong-wha.co.kr &nbsp;&nbsp; 사업자등록번호 : 110-81-00102</p>
+                </li>
+            </ul>
+            <ul>
+                <li><a href="#">개인정보 취급 방침</a></li>
+                <li>Copyright (c) DONG WHA PHARM. CO., LTD ALL Rights Reserved. </li>
+                <li><a href="./manager_page/e_main.html">관리자 페이지</a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+</section>
+<script src="./js/wow.js"></script>
+<script src="./js/common.js"></script>
+<script>
+    wow = new WOW({
+        animateClass: 'animated',
+        offset:100,
+        live:true
+    }
+    );
+    wow.init();
+</script>
+
+</body>
+</html>

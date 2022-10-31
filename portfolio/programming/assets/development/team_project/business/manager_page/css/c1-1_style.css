@@ -1,0 +1,139 @@
+@charset  "utf-8";
+@import "p_aside.css";
+@import "reset.css";
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.5/dist/web/static/pretendard.css");
+
+*{box-sizing: border-box;color:#5c5c5c;}
+.align{display: flex;}
+/*section1 영역*/
+.t_wrap{width:70%;margin: 4% 3% 9% 3%;}
+.section1{margin-bottom:70px;}
+.section1 table{margin-bottom:30px;}
+.t_wrap h2{
+    font-size:17px; 
+    font-weight: bold; 
+    color:#666; 
+    margin-bottom:2%;
+}
+.t_wrap table{
+    border:1px solid #ddd;
+    width:100%;
+    border-collapse: collapse;
+}
+
+.t_wrap th, .t_wrap td {border: 1px solid #ddd; vertical-align: middle;}
+.section1 th{height:50px;font-size:13px;font-weight: bold;color:#909090};
+.section1 td{width:25%;}
+.section1 td{padding:10px;}
+
+
+.select{
+    appearance:none;
+    width:120px;
+    height:30px;
+    background:url('../img/icon/arrow.png')right no-repeat;
+    background-size:10px;
+    padding:5px;
+    margin-right:10px;
+    border:1px solid #ddd;;
+}
+.seldate{
+    padding:5px;
+    width:120px; 
+    height:30px;
+    height:30px;
+    background:url('../img/icon/arrow.png')right no-repeat;
+    background-size:10px;
+    border:1px solid #ddd;
+    margin-right:10px;
+}
+
+
+
+.ui-datepicker-calendar a.ui-state-hover{
+    border: 1px solid #37594b;
+    background: #37594b;
+    color: #fff;
+}
+.ui-datepicker-calendar a.ui-state-highlight, .ui-widget-content .ui-state-highlight, .ui-widget-header .ui-state-highlight {
+    border: 1px solid #37594b;
+    background: #37594b;
+    color: #fff;}
+
+.select option {
+    background: #37594b;
+    color: #fff;
+    padding: 3px 0;
+  }
+  .member[type=text] {
+    height:30px;
+    width:150px;
+    border: 0;
+    outline: none;
+    background-color:#eaeaea;
+    margin-right:10px;
+}
+.date[type=date]{
+    height:30px;
+    padding:5;
+    width:120px;
+    border:1px solid #ddd;;
+}
+button{
+    width:120px;
+    height:30px;
+    padding:5;
+    background: none;
+    border:1px solid #ddd;
+    margin-right:10px;
+    cursor:pointer;
+}
+.btn button:hover{background: #37594b; color:#fff;}
+.btn{text-align: center;}
+.btn button{color:#37594b;}
+
+/*section2 영역*/
+.lineup{float: right; font-size:11px;margin-bottom:10px;}
+
+.section2::after{
+	content:'';
+	width:0; height:0;
+	display:block;
+	clear:both;
+	visibility:hidden;
+}
+.lineup a{position: relative;}
+.lineup a::after{
+    content:"";
+    display:block;
+    height:12px;
+    width:1px;
+    background:#666;
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%);
+    left:-7px;
+}
+.lineup a:first-child::after{display:none;}
+
+.lineup a{margin-right:10px;padding:0 5px;}
+.lineup a:last-child{margin-right: 0; padding-right:0;}
+
+.section2 th{
+    background: #eaeaea;
+    height:50px;
+    font-size:13px;
+    font-weight:bold;
+    color:#909090
+}
+.section2 td{
+    height:50px;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    color:#666;
+}
+
+
+

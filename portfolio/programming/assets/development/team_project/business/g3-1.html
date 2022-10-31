@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <title>상품구매</title>
+    <link href="./css/g3-1_style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <header>
+        <div id="header">
+            <ul class="flex" id="util">
+                <li><a href="./l.html">로그인</a></li>
+                <li><a href="./l2-1.html">회원가입</a></li>
+                <li><a href="./s.html">제품판매약국 찾기</a></li>
+            </ul>
+            <nav class="flex"> 
+                <h1 id="logo">
+                    <a href="./h1_main.html">
+                        <img src="./img/icon/logo.png" alt="logo" />
+                    </a>
+                </h1>
+                <ul id="gnb">
+                    <li>
+                        <a href="./g1.html">브랜드 스토리</a>
+                    </li>
+                    <li>
+                        <a href="./g2.html">제품정보</a>
+                    </li>
+                    <li>
+                        <a href="./g3.html">상품구매</a>
+                    </li>
+                    <li>
+                        <a href="./m1.html">마이페이지</a>
+                    </li>
+                    <li>
+                        <a href="./m1.html"><img src="./img/icon/mypage.png" alt="mypage" /></a>
+                        <a href="./b-2.html"><img src="./img/icon/shoppingcart.png" alt="shoppingcart" /></a>
+                    </li>
+                    <li>
+                        <a href="./b-1.html">장바구니</a>
+                    </li>
+                    <li>
+                        <a href="./s.html">
+                            제품판매약국찾기
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./l.html">
+                            로그인/회원가입
+                        </a>
+                    </li>
+                </ul>
+                <div id="m_btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+<section class="wrap">
+    <h2>장바구니 비었을때</h2>
+    <ul>
+        <li>1<br/>장바구니</li>
+        <li>&nbsp;</li>
+        <li>2<br/>주문/결제</li>
+        <li>&nbsp;</li>
+        <li>3<br/>주문완료</li>
+    </ul>
+    <div class="flex">
+        <section id="section01">
+            <h3>배송지</h3>
+            <form method="post" name="frm" action="#">
+                <p>받는사람 <input type="text" id="person" name="text" /></p>
+                <p id="phone">연락처 
+                    <select name="sel">
+                        <option value="b">010</option>
+                        <option value="c">011</option>
+                    </select>
+                    <input type="tel" id="tel" name="phone" maxlength="8" placeholder="입력해주세요" />
+                </p>
+                <p>주소 <button>주소찾기</button><input type="text" name="adress" id="adress" disabled="disabled" /></p>
+                <p><input type="text" name="adn" id="adn" disabled="disabled" /></p>
+                <p><input type="text" name="detail" id="detail" placeholder="상세주소 입력" /></p>
+            </form>
+            <h3>주문상품</h3>
+            <div id="product">
+                <p>까스활액</p>
+                <ul>
+                    <li><img src="./img/g3-1_img/bottle1.png" alt="bottle1" /></li>
+                    <li>까스활액
+                        <ul id="productDetail">
+                            <li class="num01">12,000원</li>
+                            <li>|</li>
+                            <li class="productNum">10개</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <h3>결제수단</h3>
+            <ul id="payment" class="flex">
+                <li><a href="#">카드</a></li>
+                <li><a href="#">무통장입금</a></li>
+                <li><a href="#">카카오페이</a></li>
+                <li><a href="#">네이버페이</a></li>
+                <li><a href="#">페이코</a></li>
+                <li><a href="#">핸드폰</a></li> 
+            </ul>
+        </section>
+        <section id="section02">
+            <ul id="sectionTop">
+                <li>결제금액</li>
+                <li>총 상품금액<span class="num01">12,000원</span></li>
+                <li>배송비<span>0원</span></li>
+                <li>&nbsp;</li>
+                <li>최종결제금액<span class="num02">12,000원</span></li>
+            </ul>
+            <ul id="sectionBottom">
+                <li>
+                    <input type="checkbox" class="checkBox" id="allCk" />
+                    <label for="allCk" class="checkList"></label>
+                    <label for="allCk" class="checkText">아래 내용에 모두 동의합니다.(필수)</label>
+                </li>
+                <li>
+                    <ul>
+                        <li>
+                            <input type="checkbox" class="checkBox allChk" id="chkSel" />
+                            <label for="chkSel" class="checkList"></label>
+                            <label for="chkSel" class="checkText">개인정보수집이용 및 제 3자 제공 동의(필수)</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" class="checkBox allChk" id="chkSel01" />
+                            <label for="chkSel01" class="checkList"></label>
+                            <label for="chkSel01" class="checkText">개인정보 제 3자 제공</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" class="checkBox allChk" id="chkSel02" />
+                            <label for="chkSel02" class="checkList"></label>
+                            <label for="chkSel02" class="checkText">개인정보 수집 및 이용</label>
+                        </li>
+                        <li>본인은 만 14세 이상이며,주문 내용을 확인하였습니다.</li>
+                    </ul>
+                </li>
+            </ul>
+            <p><a href="./g3-2.html"><span class="num02">12,000</span>원 결제하기</a></p>
+        </section>
+    </div>
+</section>
+<footer>
+    <div>
+        <div id="footer_sns">
+            <ul class="flex">
+                <li>
+                    <a href="#">
+                        <img src="./img/icon/f.png" alt="facebook" />
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./img/icon/u.png" alt="youtube" />
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./img/icon/in.png" alt="instagram" />
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="flex" id="footer_under">
+            <ul>
+                <li>
+                    <a href="#">
+                        <img src="./img/icon/ft_logo.png" alt="logo" />
+                    </a>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                <p>04552 서울특별시 중구 남대문로 9길 24 패스트파이브 타워 6~8층 &nbsp;&nbsp; 대표이사 : 유준하, 한종현</p>
+                <p>Tel : 02-2021-9300 &nbsp;&nbsp; Mail : dogwha@dong-wha.co.kr &nbsp;&nbsp; 사업자등록번호 : 110-81-00102</p>
+                </li>
+            </ul>
+            <ul>
+                <li><a href="#">개인정보 취급 방침</a></li>
+                <li>Copyright (c) DONG WHA PHARM. CO., LTD ALL Rights Reserved. </li>
+                <li><a href="./manager_page/e_main.html">관리자 페이지</a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+</body>
+<script src="./js/g3-1.js"></script>
+<script src="./js/common.js"></script>
+</html>
