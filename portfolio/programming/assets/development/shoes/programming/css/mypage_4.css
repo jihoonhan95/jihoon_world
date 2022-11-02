@@ -60,7 +60,7 @@ button:hover{
     color:#D99C79;
 }
 
-footer{width:100%; position:absolute; bottom:0;}
+footer{width:100%; position:absolute; bottom:-500px;}
 
 
 

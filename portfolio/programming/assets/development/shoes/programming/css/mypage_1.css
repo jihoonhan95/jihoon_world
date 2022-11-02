@@ -90,4 +90,4 @@ section h1{
 }
 .list_buttom>p:hover{cursor:pointer;}
 .list_buttom>p:last-child{margin:0;}
-footer{width:100%; position:absolute; bottom:0;}
+footer{width:100%; position:absolute; bottom:-300px;}
