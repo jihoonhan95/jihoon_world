@@ -185,10 +185,8 @@ button:focus {outline: none !important;}
 
 .social-icon li a:hover {color: #fff;}
 .social-icon li .facebook:hover {background: #3b5999;}
-.social-icon li .twitter:hover {background: #4A9CEC;}
 .social-icon li .instagram:hover {background: #D6274D;}
-.social-icon li .linkedin:hover {background: #1260A2;}
-.social-icon li .google:hover {background: #CE332A;}
+.social-icon li .google:hover {background: #1ae713;}
 
 /* ScrollToTop */
 a.back-to-top {
