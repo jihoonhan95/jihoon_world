@@ -83,14 +83,5 @@ input[id="saveChk"]{
 .sns_login a{margin:0 15px;}
 
 
-footer{width:100%; position:absolute; bottom:0;}
+footer{width:100%; position:absolute; bottom:-200px;}
 
-
-  /* 모바일 버전 (1024px) */
-@media all and (max-width:1024px){
-   
-}
-
-@media(max-width:375px){
-
-}
