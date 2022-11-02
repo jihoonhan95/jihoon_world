@@ -6,12 +6,91 @@ font-family: 'Roboto', sans-serif;
 */
 
 /* 슬라이드 */
-.banner {width:1920px;}
-.banner img{width:1920px; height:960px;}
-.banner {position:relative; margin:0 auto; padding:0; overflow: hidden;}
+.slide {
+    /* layout */
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    position: relative;
+    /* size */
+    width: 1920px;
+    /* slide drag를 위해 DOM요소가 드래그로 선택되는것을 방지 */
+    user-select: none;
+    margin:0 auto;
+}
+.slide_item {
+    /* layout */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    left: 0px;
+    /* size */
+    width: 100%;
+    height: 960px;
+    flex-shrink: 0;
+    /* transition */
+    transition: left 0.15s;
+}
+.slide_button {
+    /* layout */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* position */
+    position: absolute;
+    /* 버튼이 중앙에 위치하게 하기위해 계산 */
+    top: calc(50% - 16px);
+    /* size */
+    width: 32px;
+    height: 32px;
+    /* style */
+    border-radius: 100%;
+    background-color: #cccc;
+    cursor: pointer;
+}
+.slide_prev_button {left: 10px;}
+.slide_next_button {right: 10px;}
 
-
-
+  /* 페이지네이션 스타일 */
+ul,li {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.slide_pagination {
+    /* layout */
+    display: flex;
+    gap: 5px;
+    /* position */
+    position: absolute;
+    bottom: 0;
+    /* left:50%, translateX(-50%)를 하면 가로 가운데로 위치시킬 수 있다. */
+    left: 50%;
+    transform: translateX(-50%);
+}
+.slide_pagination > li {
+    /* 현재 슬라이드가 아닌 것은 투명도 부여 */
+    color: #7fb5ff88;
+    cursor: pointer;
+    font-size: 25px;
+}
+.slide_pagination > li.active {
+    /* 현재 슬라이드 색상은 투명도 없이 */
+    color: #7fb5ff;
+}
+.slide_item_duplicate {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    left: 0px;
+    width: 100%;
+    height: 300px;
+    flex-shrink: 0;
+    transition: left 0.15s;
+}
+/**/
 
 
 h2,h3,.content>ul>li{text-align:center;}
