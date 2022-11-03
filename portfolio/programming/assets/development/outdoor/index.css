@@ -1,0 +1,96 @@
+@charset "utf-8";
+@import url('./reset.css');
+
+
+html{text-align:center; font-size:14px;}
+.wrap{width:1440px; margin:0 auto;}
+.flex{display:flex; flex-flow:row wrap;}
+
+/* 유틸영역 */
+.util{
+    justify-content: space-between;
+    align-items:flex-end;
+    height:50px;   
+}
+.util>div{height:100%;}
+.util img{ height:100%;}
+.util li{margin:0 10px;}
+
+/* gnb */
+.gnb_background{
+    background-color:red;
+    height:30px;
+    margin-top:20px;
+}
+.gnb_background>ul{
+    justify-content: space-around;
+    line-height:30px;
+}
+.gnb_background>ul a{display:block;}
+
+/* visual */
+.visual>div{
+    width:1440px; height:500px;
+    overflow:hidden;
+}
+
+
+/* select */
+.select>.select_man,.select>.select_woman{width:400px;}
+.select_background{width:640px;}
+.select>.select_man{background:url('./img/img1.jpg') no-repeat}
+.select>.select_woman{background:url('./img/img2.jpg') no-repeat}
+
+.select_background{background:url('./img/select_background.jpg') no-repeat;}
+.select_background>ul{justify-content:space-around;}
+.select_background>ul:first-child{margin:10px 0;}
+.select_background>ul:last-child{margin-bottom:10px;}
+
+/* search */
+.search{margin:30px 0;}
+.search>h2{font-size:30px; margin-bottom:30px;}
+.search>p>input{width:195px;}
+.search>select{
+    display:block;
+    margin:20px auto;
+    width:200px;
+    text-align:center;
+}
+.search>div{justify-content: center; margin-top:30px;}
+.search>div>span{
+    display:block;
+    background:red;
+    width:50px; height:50px;
+    border-radius:100%;
+    margin:0 10px;
+}
+.search>div>span:hover{cursor:pointer;}
+
+.search>div>span.yellow{background:yellow;}
+.search>div>span.green{background:green;}
+.search>div>span.blue{background:blue;}
+.search>div>span.black{background:black;}
+
+/* top */
+.top_background{background:#f8f8f8; margin:100px 0; padding:20px 0;}
+.top{box-sizing: border-box;}
+.top>p{padding-bottom:30px; font-size:20px;}
+.top>div{justify-content: space-between;}
+.top>div>ul{width:200px;}
+.top>div>ul>li{font-size:12px;}
+.top>div>ul img{width:100%; margin:20px 0;}
+
+
+
+/* samll_ben */
+.samll_ben>div{width:300px; height:200px;}
+.samll_ben>div img{width:100%;}
+
+
+
+
+/* footer */
+
+.footer>div{
+}
+.footer>div>ul{justify-content: space-between;}
