@@ -1,8 +1,12 @@
 @charset "utf-8";
 @import url('./reset.css');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
 
+/*
+font-family: 'Noto Sans KR', sans-serif;
+*/
 
-html{text-align:center; font-size:14px;}
+html{text-align:center; font-size:14px; font-family:'Noto Sans KR', sans-serif;}
 .wrap{width:1440px; margin:0 auto;}
 .flex{display:flex; flex-flow:row wrap;}
 
@@ -26,7 +30,10 @@ html{text-align:center; font-size:14px;}
     justify-content: space-around;
     line-height:30px;
 }
-.gnb_background>ul a{display:block;}
+.gnb_background>ul>li{width:10%;}
+.gnb_background>ul a{display:block; color:#fff;}
+.gnb_background>ul>li:hover{background:#fff;}
+.gnb_background>ul>li:hover a{color:red; font-weight:700;}
 
 /* visual */
 .visual>div{
@@ -83,14 +90,33 @@ html{text-align:center; font-size:14px;}
 
 
 /* samll_ben */
+.samll_ben{justify-content: space-between; text-align:left;}
 .samll_ben>div{width:300px; height:200px;}
+.samll_ben>div>div:first-child{
+    border-right:1px solid #333;
+    border-left:1px solid #333;
+    border-top:1px solid #333;
+}
+.samll_ben>div>div:last-child{
+    border-right:1px solid #333;
+    border-left:1px solid #333;
+    border-bottom:1px solid #333;
+
+}
 .samll_ben>div img{width:100%;}
+.samll_ben>div p{padding:10px; font-size:10px;}
+.samll_ben>div p span{background:blue; color:#fff; padding:3px; border-radius:20%;}
 
 
 
 
 /* footer */
+footer{margin-top:50px;}
+footer>div{border:1px solid #333;}
+footer>div .footer_logo{width:8%;}
+footer>div .footer_logo img{ width:100%;}
+footer>div>ul{justify-content: space-between; align-items:center;}
+footer>div>ul>li:nth-child(2){font-weight:900;}
+footer>address{text-align:left; background-color: #f8f8f8; padding:20px 0;}
+footer>address p{margin:20px 0;}
 
-.footer>div{
-}
-.footer>div>ul{justify-content: space-between;}
