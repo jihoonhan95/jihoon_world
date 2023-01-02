@@ -11,6 +11,10 @@ a,a:link,a:visited,a:hover,a:active{
 }
 
 /*공통사용 스타일*/
+html{
+    max-width:1920px;
+    margin:0 auto;
+}
 section>h2{
 	display:none;
 	visibility:hidden;
@@ -29,7 +33,7 @@ section>h2{
     position:relative;
     padding:20px 5%;
 }
-.logo{width:30%;} /*로고 비율에 따라서 수정*/
+.logo{width:30%; } /*로고 비율에 따라서 수정*/
 #gnb{
     display:none;
     position:absolute;

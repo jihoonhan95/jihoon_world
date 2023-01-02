@@ -1,0 +1,80 @@
+@charset "utf-8";
+@import url('./reset.css');
+
+.wrap{width:1440px; margin:0 auto;}
+.flex{display:flex; flex-flow:row wrap;}
+
+
+/* util 영역 */
+#util{background-color:rgb(196, 196, 196)}
+#util>ul{justify-content:flex-end;}
+#util>ul>li{
+    margin:10px 0 10px 20px; 
+    font-size:13px;
+    font-weight:800;
+}
+#util>ul>li>a{color:#fff;}
+#util>ul>li img{width:50%;}
+
+/* gnb영역 */
+#gnb{padding:20px 0; border-bottom:1px solid rgb(204, 204, 204);}
+#gnb>ul{justify-content:space-around; align-items: center; font-size:18px;}
+
+#gnb>ul>li>ul{display:none}
+
+/* visual 영역 */
+#visual{
+    height:427px;
+    overflow: hidden;
+}
+#visual>img{width:100%;}
+
+
+/* img_line 영역 */
+#img_line{
+    justify-content: space-between;
+    margin:20px 0 60px;
+}
+
+
+/* list 영역 */
+#macallan{margin:150px 0;}
+#glenmorangie{border-bottom:2px dashed rgb(224, 224, 224); padding-bottom:100px;}
+#macallan,#glenmorangie{justify-content: space-between;}
+.main{width:20%;}
+.list{width:75%;}
+.main>p{margin-bottom:13px; color:rgb(141, 140, 140); font-weight:900; font-size:20px;}
+.main>img{border:1px solid rgb(224, 224, 224);}
+
+.list>ul{
+    justify-content:space-between;
+    text-align:center;
+    font-size:13px;
+}
+.list>ul img{border:1px solid rgb(224, 224, 224);}
+.list>ul>li{border-bottom:1px solid rgb(224, 224, 224);}
+.list>ul>li>ul>li{margin-bottom:10px;}
+.list>ul>li>ul>li:last-child{font-weight:900;}
+.list>ul>li:nth-child(4),
+.list>ul>li:nth-child(5),
+.list>ul>li:nth-child(6){margin-top:30px;}
+
+/* footer 영역 */
+footer{
+    background-color:rgb(165, 159, 159);
+    margin-top:100px;
+    padding:30px;
+}
+
+
+footer>div>ul>li{margin-right:150px;}
+footer>div>ul>li>ul>li{margin-bottom:10px;}
+footer>div>ul>li:last-child>ul>li{height:20px; overflow: hidden; position:relative;}
+
+footer>div>ul>li:last-child>ul>li img{position:absolute;}
+footer>div>ul>li:last-child>ul>li:nth-child(3) img{top:-20px;}
+footer>div>ul>li:last-child>ul>li:nth-child(4) img{top:-60px;}
+footer>div>ul>li:last-child>ul>li:nth-child(5) img{top:-40px;}
+
+
+
