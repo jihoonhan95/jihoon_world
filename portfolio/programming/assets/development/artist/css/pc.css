@@ -31,7 +31,7 @@
 		padding:20px 0;
 		position:absolute;
 		top:-100%;
-		transform:translateY(50%;)
+		transform:translateY(50%);
 	}
 	#visual>.wrap>figure:nth-child(2):hover>figcaption{top:50%;}
 	#visual>.wrap>figure:nth-child(3)>figcaption{
@@ -155,6 +155,7 @@
 
 	/* 큰배너 영역 */
 	#bnr_wrap{
+		
 		height:327px;
 		text-align:center;
 		margin:40px 0 0 0;
@@ -165,14 +166,14 @@
 		margin:0 auto;
 		width:940px;
 		height:327px;
-		background:url('../images/bnr.jpg') no-repeat;
+		background:url('../images/bnr.jpg') no-repeat ;
 		overflow:hidden;
 		text-indent:-99999px;
 	}
 	
 	/* 푸터 영역 */
 	footer{
-		height:200px;
+		height:100px;
 		padding:40px 0 0 0;
 	}
 

@@ -45,6 +45,7 @@ html{text-align:center; font-size:14px; font-family:'Noto Sans KR', sans-serif;}
 /* select */
 .select>.select_man,.select>.select_woman{width:400px;}
 .select_background{width:640px;}
+.select_background>ul>li:hover{opacity:0.8;}
 .select>.select_man{background:url('./img/img1.jpg') no-repeat}
 .select>.select_woman{background:url('./img/img2.jpg') no-repeat}
 
@@ -84,6 +85,7 @@ html{text-align:center; font-size:14px; font-family:'Noto Sans KR', sans-serif;}
 .top>p{padding-bottom:30px; font-size:20px;}
 .top>div{justify-content: space-between;}
 .top>div>ul{width:200px;}
+.top>div>ul:hover{cursor: pointer;}
 .top>div>ul>li{font-size:12px;}
 .top>div>ul img{width:100%; margin:20px 0;}
 
@@ -92,6 +94,7 @@ html{text-align:center; font-size:14px; font-family:'Noto Sans KR', sans-serif;}
 /* samll_ben */
 .samll_ben{justify-content: space-between; text-align:left;}
 .samll_ben>div{width:300px; height:200px;}
+.samll_ben>div:hover{opacity:0.6;}
 .samll_ben>div>div:first-child{
     border-right:1px solid #333;
     border-left:1px solid #333;
